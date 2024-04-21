@@ -1,21 +1,23 @@
 const express = require("express");
-const path = require("path"); // Importa el módulo 'path' para trabajar con rutas de archivos
+const path = require("path");
 const mysql = require("mysql2");
+const exphbs = require("express-handlebars"); // Importa express-handlebars
 
 // Crear una instancia de la aplicación Express
 const app = express();
 
-// Configuración de las vistas
-app.set("views", path.join(__dirname, "views")); // Establece la carpeta de vistas
-app.set("view engine", "hbs"); // Configura Handlebars como el motor de plantillas
+// Configuración de Handlebars
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", ".hbs");
+app.use(express.static(path.join(__dirname, "public")));
 
 // Conección a la base de datos
 const connection = mysql.createConnection({
-    host: "localhost", 
-    user: "usuario", 
-    password: "contraseña", 
-    database: "nombre_de_la_base_de_datos", 
-    port: 3306 
+    host: "localhost",
+    user: "usuario",
+    password: "contraseña",
+    database: "nombre_de_la_base_de_datos",
+    port: 3306
 });
 
 // Verificar la conexión
@@ -27,18 +29,10 @@ connection.connect((err) => {
     console.log('Conexión a la base de datos MySQL establecida correctamente');
 });
 
-
-
-
 // Ruta para la página principal
 app.get('/principal', (req, res) => {
-    res.render('principal/home.hbs'); // Renderiza la vista 'home.hbs'
+    res.render('principal/home'); // Renderiza la vista 'home.hbs'
 });
-
-
-
-
-
 
 
 
