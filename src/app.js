@@ -3,7 +3,6 @@ const path = require("path");
 const mysql = require("mysql2");
 const exphbs = require("express-handlebars"); // Importa express-handlebars
 
-// Crear una instancia de la aplicación Express
 const app = express();
 
 // Configuración de Handlebars
@@ -36,8 +35,34 @@ app.get('/principal', (req, res) => {
 
 
 
+// Ruta para la página principal
+app.get('/servicios', (req, res) => {
+    res.render('servicios/servicios.hbs'); // Renderiza la vista 'home.hbs'
+});
 
 
+
+// Endpoint para recibir mensajes del chatbot
+app.post('/chatbot', (req, res) => {
+    const message = req.body.message;
+
+    // Aquí puedes implementar la lógica del chatbot para procesar el mensaje y generar una respuesta
+    const response = generateResponse(message);
+
+    res.json({ response });
+});
+
+
+
+
+
+
+function generateResponse(message) {
+    // Aquí puedes implementar la lógica para generar la respuesta del chatbot
+    // Por ejemplo, puedes usar una librería de procesamiento del lenguaje natural (NLP) como Natural o comprender la intención del usuario y generar una respuesta apropiada.
+    // Por ahora, simplemente devolveremos un mensaje de ejemplo
+    return "¡Hola! Soy un chatbot. ¿En qué puedo ayudarte?";
+}
 
 
 

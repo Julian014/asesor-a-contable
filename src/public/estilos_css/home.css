@@ -1,0 +1,94 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Cambio de color de fondo */
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%; /* Aumento del ancho del contenedor */
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background: #03A9F4; /* Nuevo color de fondo */
+    color: #fff;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem; /* Aumento del tamaño del texto */
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2rem; /* Aumento del espacio entre elementos */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+header nav ul li a:hover {
+    color: #f0f0f0; /* Cambio de color al pasar el ratón */
+}
+
+/* Hero section styles */
+.hero {
+    background: url('imagen-de-fondo.jpg') center/cover; /* Cambio a una imagen de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10rem 0; /* Aumento del espacio interno */
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem; /* Aumento del tamaño del título */
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1.25rem; /* Aumento del tamaño del texto */
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #FFC107; /* Nuevo color para el botón */
+    padding: 1rem 2rem; /* Aumento del espacio interno */
+    font-size: 1.5rem; /* Aumento del tamaño del texto */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #FFA000; /* Cambio de color al pasar el ratón */
+}

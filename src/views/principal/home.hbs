@@ -1,24 +1,523 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXUS</title>
-    <link rel="shortcut icon" href="/imagenes/logo pestaña.jpg" type="image/x-icon">
+    <title>Consultoría y Asesoría de Calidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
 
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background: black;
+            color: #fff;
+            padding: 2rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 2rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #f0f0f0;
+        }
+
+        /* Estilos de la sección del héroe */
+        .hero {
+            background: url('imagenes/fondo_pagina_home.png') center/cover;
+            color: black;
+            padding: 10rem 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .btn {
+            color: black;
+            background:  royalblue;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background: #FFA000;
+        }
+
+        /* Estilos de la sección de atención */
+        .attention {
+            background: #f9f9f9;
+            padding: 4rem 0;
+        }
+
+        .attention .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .attention-text {
+            width: 60%;
+        }
+
+        .attention-text h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .attention-text p {
+            font-size: 1.125rem;
+            color: #666;
+        }
+
+        .attention-image {
+            width: 30%;
+        }
+
+        /* Estilos de la sección de asistencia */
+        #asistencia .container {
+            position: relative;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #asistencia .text-container {
+            max-width: 70%;
+        }
+
+        #asistencia .btn-container {
+            margin-left: auto;
+        }
+
+        /* Estilos de la sección de servicios */
+        .services {
+            background: #e0e0e0;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .service-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Estilos de la sección "Sobre nosotros" */
+        .about {
+            text-align: center;
+            padding: 4rem 0;
+            background: #fff;
+        }
+
+        .about p {
+            font-size: 1.125rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Estilos de la sección de contacto */
+        .contact {
+            background: #e0e0e0;
+            padding: 4rem 0;
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+            color: #03A9F4;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact input,
+        .contact textarea {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            margin-right: 20px;
+        }
+
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        footer p {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #fotoo{
+border-radius: 18px;
+            width: 500px;
+
+
+        }
+
+
+
+           .citas {
+            background-color:  lightgray;
+            color: black;
+            padding: 10rem 0;
+            text-align: center;
+        }
+
+        .citas h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .citas p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .citas .btn {
+            color: black;
+            background:  royalblue;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .citas .btn:hover {
+            background: #FFA000;
+        }
+
+        #calendario{
+
+position: relative;
+float: right;
+width: 100px;
+
+
+        }
+        /* Estilos de la sección de clientes */
+.clients {
+    background: #fff; /* Cambia el color de fondo según tu diseño */
+    padding: 4rem 0;
+}
+
+.clients .container {
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ajusta el número de columnas según tu diseño */
+    gap: 20px;
+}
+
+.client-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+    </style>
 </head>
 <body>
-    
-    <h1>nexus INOVATIONS</h1>
+    <header>
+        <div class="container">
+            <h1>Consultoría y Asesoría de Calidad</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                   
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Mejoramos la calidad de tu empresa</h2>
+            <p> <strong> Ofrecemos soluciones personalizadas para optimizar tus procesos y alcanzar la excelencia.</strong></p>
+            <a href="#contacto" class="btn"> <strong> Contáctanos</strong> </a>
+        </div>
+    </section>
+
+    <section id="atencion" class="attention">
+        <div class="container">
+            <div class="attention-text">
+                <h2>Atendida por Expertos Certificados</h2>
+                <p>Nuestros servicios son prestados por profesionales certificados en gestión de calidad, asegurando la excelencia en cada atención que brindamos.</p>
+            </div>
+            <div class="attention-image">
+                <img id="fotoo" src="imagenes/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.avif" alt="Descripción de la imagen">
+            </div>
+        </div>
+    </section>
+
+    <section id="asistencia" class="citas">
+        <div class="container">
+            <div class="text-container">
+                <h2>¿Necesitas asesoría virtual?</h2>
+                                <p> <strong> Agenda una cita para tener asesoría personalizada en línea</strong></p>
+
+            </div>
+                            <img id="calendario"   src="imagenes/calendario.png" alt="">
+
+            <div class="btn-container">
+
+                <a href="#contacto" class="btn">AGENDAR CITA</a>
+            </div>
+        </div>
+    </section>
 
 
 
 
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Consultoría en Calidad</h3>
+                    <p>Analizamos y mejoramos los procesos de tu empresa para asegurar la máxima calidad en tus productos y servicios.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Asesoría en Certificaciones</h3>
+                    <p>Te guiamos en el proceso de obtención de certificaciones ISO y otras normativas relevantes.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Auditorías Internas</h3>
+                    <p>Realizamos auditorías internas para garantizar el cumplimiento de los estándares de calidad.</p>
+                </div>
+                <!-- Agrega más servicios aquí -->
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn">Ver Más</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de expertos en gestión de calidad con años de experiencia ayudando a empresas a alcanzar sus objetivos de excelencia.</p>
+        </div>
+    </section>
+<section id="clientes" class="clients">
+    <div class="container">
+        <h2>Nuestros Clientes</h2>
+        <div class="client-grid">
+            <div class="client-item">
+                <img src="imagenes/cliente1.jpg" alt="Cliente 1">
+            </div>
+            <div class="client-item">
+                <img src="imagenes/cliente2.jpg" alt="Cliente 2">
+            </div>
+            <div class="client-item">
+                <img src="imagenes/cliente3.jpg" alt="Cliente 3">
+            </div>
+            <!-- Agrega más clientes aquí -->
+        </div>
+    </div>
+</section>
+
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="mailto:info@consultoria-calidad.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
 
 
 
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank"><img src="imagenes/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="imagenes/instagram (1).png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="imagenes/linkedin.png" alt="Twitter"></a>
+            </div>
+            <p>&copy; 2024 Nexus innovations. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('header nav ul li a').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 80
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const assistantIcon = document.getElementById("assistant-icon");
+            const assistantMenu = document.getElementById("assistant-menu");
+            const chatOutput = document.getElementById("chat-output");
+            const userInput = document.getElementById("user-input");
+            const sendBtn = document.getElementById("send-btn");
 
+            assistantIcon.addEventListener("click", function() {
+                if (assistantMenu.style.display === "none") {
+                    assistantMenu.style.display = "block";
+                } else {
+                    assistantMenu.style.display = "none";
+                }
+            });
 
+            sendBtn.addEventListener("click", function() {
+                const message = userInput.value.trim();
+                if (message !== "") {
+                    fetch("/chatbot", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({ message })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        chatOutput.innerHTML += `<strong>Chatbot:</strong> ${data.response}</p>`;
+                        userInput.value = "";
+                    })
+                    .catch(error => console.error("Error:", error));
+                }
+            });
+        });
+    </script>
 </body>
 </html>
