@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Normas&amp;Gestion</title>    <link rel="icon" type="image/x-icon" href="imagenes/logo.png">
+
 </head>
 <body>
     <Style>:root {
@@ -369,6 +370,8 @@ footer {
 
 
 .heroo {
+    position: relative;
+    top: 10px;
     font-size: 40px;
    
     height: 400px; /* Ajusta la altura de la sección según tus necesidades */
@@ -420,12 +423,14 @@ section.hero h1 {
 }
 
 .card-med > a > span {
-    width: 100%;
+    width: 10%;
     /*    border: 1px solid blue;*/
 }
 
 .card-med > a > span:nth-of-type(1) {
-    width: 100%;
+        color: black;
+
+    width: 5%;
     /*    border: 1px solid blue;*/
     font-size: 24px;
     font-weight: 600;
@@ -433,9 +438,11 @@ section.hero h1 {
 }
 
 .card-med > a > span:nth-of-type(2) {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
+    color: black;
+    font-size: 25px;
+    font-weight: 10px;
+
+    line-height: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -443,7 +450,7 @@ section.hero h1 {
 }
 
 .card-med > a > span:nth-of-type(2) > span {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 #serv-groom > .card-image {
@@ -1110,61 +1117,430 @@ p {
     height: auto;
 }
 
+        .contact {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 40px auto;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .contact label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+
+        .contact input[type="text"]:focus,
+        .contact input[type="email"]:focus,
+        .contact textarea:focus {
+            border-color: #007BFF;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+            outline: none;
+        }
+
+        .contact textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .contact .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .contact .btn:active {
+            background-color: #003f7f;
+            transform: translateY(0);
+        }
+     
+        .golden {
+            color: gold; /* Color dorado */
+        }
+/* Estilos para el encabezado y la navegación */
+
+
+
+
+nav {
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+#logo {
+ 
+        margin-right: 105px; /* Espaciado a la derecha del logo */
+
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro de #logo */
+}
+
+#logo img {
+    
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 105px; /* Espaciado a la derecha del logo */
+}
+
+
+.golden {
+    font-size: 22px;
+    color: gold; /* Color dorado para el texto */
+    font-weight: bold; /* Negrita para el texto */
+}
+
+
+
+/* Estilos para el menú principal */
+.navigation-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-menu li {
+    margin: 0; /* Quita todas las márgenes */
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    color: white; /* Color del texto del enlace */
+    padding: 10px; /* Agrega espacio interno para los enlaces */
+    display: block; /* Hace que los enlaces ocupen todo el ancho disponible */
+}
+
+/* Estilos para el menú desplegable */
+.subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Color de fondo */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra */
+    padding: 0; /* Quita el espacio interno */
+    margin: 0; /* Quita las márgenes */
+}
+
+.subnav li {
+    display: block;
+    padding: 10px;
+}
+
+.subnav li:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
+}
+
+.subnav a {
+    color: white; /* Color del texto */
+    text-decoration: none;
+}
+
+/* Estilos para los íconos de flecha */
+.material-symbols-outlined {
+    vertical-align: middle; /* Alinea verticalmente */
+    margin-left: 5px; /* Espacio a la izquierda */
+}
+
+#logooo{
+position: relative;
+right: -90px;
+
+    width: 100px;
+}
+      #fotoo{
+border-radius: 18px;
+            width: 500px;
+
+
+        }
+        /* Estilos de la sección de atención */
+        .attention {
+            background: #f9f9f9;
+            padding: 4rem 0;
+        }
+
+        .attention .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .attention-text {
+            width: 60%;
+        }
+
+        .attention-text h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .attention-text p {
+            font-size: 1.125rem;
+            color: #666;
+        }
+
+        .attention-image {
+            width: 30%;
+        }
+
+        /* Estilos de la sección de asistencia */
+        #asistencia .container {
+            position: relative;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #asistencia .text-container {
+            max-width: 70%;
+        }
+
+        #asistencia .btn-container {
+            margin-left: auto;
+        }
+
+
+
+
+
+        .container--redes{
+  width:400px;
+  left:0;
+  position:fixed;
+  top:25%;
+    z-index: 9999; /* Valor alto para asegurar que esté por encima de todo */
+
+  }
+
+
+
+.icon{
+  top:50%;
+  position:relative;
+  margin-bottom:10px;
+  }
+
+
+.icon-primary{
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#3b5998;
+  border-radius:100%;
+  position:relative;
+  z-index:1;
+  box-shadow:1px 0 1px rgba(0,0,0,.5);
+  height:40px;
+  width:40px;
+  text-align:center;
+  line-height:40px;
+  }
+
+.container-description{
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:24px;
+
+}
+
+.icon-description{
+  width:250px;
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#3b5998;
+  height:40px;
+  line-height:40px;
+  padding-left:40px;
+  border-radius:0 20px 20px 0;
+  transform: translate3d(-110%, 0, 0);
+  transition:transform 175ms ease;
+}
+
+.icon-primary:hover  ~ .container-description .icon-description{
+     transform: translate(0, 0);
+  
+}
+
+/*colores para redes sociales*/
+.color-twitter{
+  background-color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.color-whatsapp {
+
+  background-image: url('imagenes/whatsapp.png');
+  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
+  width: 40px; /* Ancho del icono, ajusta según sea necesario */
+  height: 40px; /* Alto del icono, ajusta según sea necesario */
+  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
+  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
+}
+
+
+
+
+.color-whatsapp-text {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-image: url('imagenes/whatsapp.png');
+    background-size: cover;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
+}
+
+.color-whatsapp-text span {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    z-index: 1; /* Asegura que el texto esté por encima del fondo */
+}
+
+
+
+
+
+
+.color-gmail {
+
+    background-image: url('imagenes/gmail.png');
+  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
+  width: 40px; /* Ancho del icono, ajusta según sea necesario */
+  height: 40px; /* Alto del icono, ajusta según sea necesario */
+  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
+  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
+}
+
+
+
+
+
+.color-gmail-text {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-size: cover;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
+}
+
+.color-gmail-text span {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    z-index: 1; /* Asegura que el texto esté por encima del fondo */
+}
+
+
+
+
+
+
 </Style>
-    <header>
-
+ <header>
         <nav>
-              
             <div id="logo">
-
-          
-<img id="logo" src="imagenes/logo.png" alt="">
-               Normas& <br> Gestion
+                <img  id="logooo" src="imagenes/logo.png" alt="Logo">
+                <div class="golden">
+                    Normas&amp; <br> Gestion
+                </div>
             </div>
             <ul class="navigation-menu">
-                <li><a href="#">SERVICIOS</a>
-                  
-
-
+                <li><a href="#">SERVICIOS</a></li>
                 <li><a href="#">AGENDAR</a>
                     <ul class="subnav">
                         <li class="card-med" id="serv-groom">
-                            <div class="card-image"><img src="https://ouch-cdn2.icons8.com/T11rfGmMKgcStJyAFKNgtOfE79cadabx0DVMnvzA9Pk/rs:fit:368:313/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDQx/LzFlYWU4MWY3LWQ1/ZjYtNDM2Ny1hZjM5/LWVmNTFmMGM5Njk4/MS5wbmc.png"></div>
+                            <div class="card-image">
+<img src="imagenes/istockphoto-1144204158-612x612.jpg">                            </div>
                             <a href="#">
-                                <span>Grooming</span>
-                                <span>More Info <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></span>
+                                <span>SERVICIO</span>
+                                <span>EMERGENCIA<span class="material-symbols-outlined">5-10 MIN</span></span>
                             </a>
                         </li>
                         <li class="card-med" id="serv-board">
-                            <div class="card-image"><img src="https://ouch-cdn2.icons8.com/F5Ea1suZtMYimKDkJr0CJLO_1bju6-bTyT1EuDKEg8s/rs:fit:368:254/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjcx/LzVjMzE4NWM0LWZh/NTMtNGQ1OS05ZTM2/LTZjYzBhNGU3ODg0/NC5wbmc.png"></div>
+                            <div class="card-image">
+                                <img src="imagenes/AGENDAMIENTO-DE-CITAS@2x.png">
+                            </div>
                             <a href="#">
-                                <span>Boarding</span>
-                                <span>More Info<span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></span>
+                                <span>AGENDAR</span>
+                                   <span>CITA<span class="material-symbols-outlined"></span></span>
                             </a>
+                        </li>
                     </ul>
                 </li>
-                
-                <li>
-                    <a href="#">CONTACTANOS</a>
-                </li>
+                <li><a href="#">CONTACTANOS</a></li>
             </ul>
-            <div id="utility">
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-                <span class="material-symbols-outlined">
-                    shopping_cart
-                </span>
-
-            </div>
         </nav>
     </header>
+
     <section class="heroo">
         <h1>Impulsa tu transformación y conquista tus objetivos</h1>
+        <h4>Recibe de la mejor assesoria 100% Virtual</h4>
         <div class="btn-group">
             <button class="btn-filled-dark"><span class="material-symbols-outlined">
                   
@@ -1285,20 +1661,70 @@ p {
         </ul>
     </section>
 
-    <section id="locate">
 
-        <div>
-            <h2>Location &amp; Hours</h2>
-            <p>Our knowledgeable and friendly staff is always ready to assist you in making the best choices for your furry, feathered, or finned friends.</p>
-            <div class="btn-group">
-                <button class="btn-filled-dark"><span class="material-symbols-outlined">
-pin_drop
-</span>Find a Store</button>
-                <button class="btn-outline-dark btn-hover-color"><span class="material-symbols-outlined">
-contact_support
-</span> Contact Us</button>
+
+<article class="container--redes">
+  <!--incio de el primer icono-->
+    <div class="icon">
+      <a class="icon-primary" href="#">f</a>	
+
+      <div class="container-description">
+        <a class="icon-description" href="#">OBTENER INFORMACION</a>	
+      </div>
+    </div>
+
+  <!--incio segundo icono-->
+<div class="icon">
+    <a class="icon-primary color-gmail" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20m%C3%A1s%20informaci%C3%B3n">
+        W
+    </a>	
+    <div class="container-description">
+        <a class="icon-description color-gmail-text" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20m%C3%A1s%20informaci%C3%B3n">
+            OBTENER INFORMACIÓN
+        </a>	
+    </div>
+</div>
+
+
+<div class="icon">
+    <a class="icon-primary color-whatsapp" href="https://wa.me/573165362193?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+        W
+    </a>	
+    <div class="container-description">
+        <a class="icon-description color-whatsapp-text" href="https://wa.me/573165362193?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+            OBTENER INFORMACIÓN
+        </a>	
+    </div>
+</div>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="atencion" class="attention">
+        <div class="container">
+            <div class="attention-text">
+                <h2>Atendida por Expertos Certificados</h2>
+                <p>Nuestros servicios son prestados por profesionales certificados en gestión de calidad, asegurando la excelencia en cada atención que brindamos.</p>
+            </div>
+            <div class="attention-image">
+                <img id="fotoo" src="imagenes/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.avif" alt="Descripción de la imagen">
             </div>
         </div>
+    </section>
     </section>
 <section id="clientes" class="clients">
     <div class="container">
@@ -1317,16 +1743,43 @@ contact_support
         </div>
     </div>
 </section>
+<br>
+<br>
+
+
+<section id="contacto" class="contact">
+    <div class="container">
+        <h2>Contacto</h2>
+        <form action="mailto:Normas.gestion@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</section>
+
+
     <footer>
         <div class="container">
             <div class="social-links">
                 <a href="#" target="_blank"><img src="imagenes/facebook.png" alt="Facebook"></a>
                 <a href="#" target="_blank"><img src="imagenes/instagram (1).png" alt="Instagram"></a>
-                <a href="#" target="_blank"><img src="imagenes/whatsapp.png" alt="Twitter"></a>
-            </div>
+<a href="https://api.whatsapp.com/send?phone=573165362193&text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+    <img src="imagenes/whatsapp.png" alt="WhatsApp">
+</a>
+
+
             <p>&copy; 2024 Nexus innovations. Todos los derechos reservados.</p>
         </div>
     </footer>
+     
 </body>
 <Script>
 
