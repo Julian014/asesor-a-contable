@@ -1297,7 +1297,7 @@ border-radius: 18px;
         }
         /* Estilos de la sección de atención */
         .attention {
-            background: #f9f9f9;
+            background: white;
             padding: 4rem 0;
         }
 
@@ -1501,6 +1501,99 @@ border-radius: 18px;
 
 
 
+
+
+
+
+/* Estilo para el hover del enlace */
+ul.navigation-menu li a:hover {
+    background-color: #ddd;
+    color: #000;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.virtual-consultation {
+    background-color: rgb(230, 230, 230); /* Gris claro */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.virtual-consultation .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.virtual-consultation .text-wrapper {
+    position: relative;
+    right: 70%;
+    max-width: 100%;
+    text-align: left;
+}
+
+.virtual-consultation h2 {
+    font-size: 40px; /* Aumentado el tamaño del título */
+    margin-bottom: 15px; /* Incrementado el margen inferior */
+    color: #333;
+}
+
+.virtual-consultation p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.virtual-consultation .content-wrapper {
+    max-width: 75%;
+    text-align: right;
+}
+
+.virtual-consultation .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.virtual-consultation .logos {
+    display: flex;
+    justify-content: flex-end; /* Alineación de los logos a la derecha */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.virtual-consultation .logos img {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.virtual-consultation .logos img:first-child {
+    margin-left: 0;
+}
+
+.virtual-consultation .logos img:hover {
+    opacity: 1;
+}
+
+
 </Style>
  <header>
         <nav>
@@ -1511,7 +1604,7 @@ border-radius: 18px;
                 </div>
             </div>
             <ul class="navigation-menu">
-                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="/servicios">SERVICIOS</a></li>
                 <li><a href="#">AGENDAR</a>
                     <ul class="subnav">
                         <li class="card-med" id="serv-groom">
@@ -1547,7 +1640,7 @@ border-radius: 18px;
                 </span>AGENDAR CITA</button>
             <button class="btn-outline-dark btn-hover-color"><span class="material-symbols-outlined">
                     
-                </span> SERVICIOS DISPONIBLES</button>
+                </span> <a href="/servicios">SERVICIOS DISPONIBLES</a> </button>
         </div>
 
     </section>
@@ -1625,7 +1718,7 @@ border-radius: 18px;
        
         </ul>
     </section>
-<a href="" id="verto" >VER TODOS LOS SERVICIOS</a>
+<a href="/servicios" id="verto" >VER TODOS LOS SERVICIOS</a>
     <section>
         <h2>Otros servicios</h2>
 
@@ -1660,6 +1753,10 @@ border-radius: 18px;
             </li>
         </ul>
     </section>
+
+
+
+
 
 
 
@@ -1714,6 +1811,8 @@ border-radius: 18px;
 
 
 
+
+
     <section id="atencion" class="attention">
         <div class="container">
             <div class="attention-text">
@@ -1726,6 +1825,46 @@ border-radius: 18px;
         </div>
     </section>
     </section>
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+<section class="virtual-consultation">
+    <div class="container">
+        <div class="text-wrapper">
+            <h2>Recibe la mejor asesoría virtual</h2>
+            <p>Conéctate con nosotros para obtener la mejor asesoría virtual y resolver tus consultas de manera efectiva.</p>
+        </div>
+        <div class="content-wrapper">
+            <div class="image-wrapper">
+                <img src="imagenes/teams-to-tv-removebg-preview.png" alt="Computador">
+            </div>
+            <div class="logos">
+                <img src="imagenes/11-como-funciona-microsoft-teams.png" alt="Microsoft Teams">
+                <img src="imagenes/zoom-thumb.jpg" alt="Zoom">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<br>
+<br>
+
+    
 <section id="clientes" class="clients">
     <div class="container">
         <h2>Nuestros Clientes</h2>
@@ -1743,10 +1882,8 @@ border-radius: 18px;
         </div>
     </div>
 </section>
-<br>
-<br>
-
-
+<Br>
+</Br>
 <section id="contacto" class="contact">
     <div class="container">
         <h2>Contacto</h2>
