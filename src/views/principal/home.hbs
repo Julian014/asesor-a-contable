@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
         <meta name="author" content="Javiera Craig">
-        <title>Errotuz Elkartea</title>
+        <title>ASESORIA CONTABLE</title>
         <meta name="description" content="Asociación para la promoción del uso sostenible de los recursos forestales">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/32x32.png">
         <link rel="icon" type="image/png" size="16x16" href="assets/favicon/16x16.png">
@@ -62,45 +62,75 @@ body {
     width: auto;
     height: auto;
 }
-
-
 header {
-    background-color: #bbbbbb;
-    background-image: url(https://images.pexels.com/photos/141233/pexels-photo-141233.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-color: white;
+    background-image: url('imagenes/luxa.org-opacity-changed-contador.jpg');
     background-size: cover;
     background-attachment: fixed;
-    /*filter: brightness(80%);*/
     padding: 0;
     width: 100%;
     min-height: 25vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center; /* Alinea los elementos al centro verticalmente */
+    position: relative;
 }
 
-.header-filter {
-    padding: 0;
+.header-content {
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
-    width: 100%;
-    min-height: inherit;
-    position: absolute;
-    z-index: 0;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    width: 80%; /* Ancho ajustable según necesidad */
+    max-width: 800px; /* Máximo ancho para evitar que se estire demasiado */
+    position: relative;
+    z-index: 1;
+    text-align: left; /* Alineación del texto a la izquierda */
 }
 
 header h4 {
     color: white;
     font-weight: lighter;
-    letter-spacing: 1px;
-    text-align: center;
-    z-index: 1;
-    display: flex;
-    align-self: center;
+    font-size: 2.7vw;
+    position: relative;
+    left: 210px; /* Tamaño de fuente ajustable */
+    margin: 0;
+    top: -120px;
+}
+
+header h6 {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    position: relative;
+    left: -1037px;
+    top:50px /* Tamaño de fuente ajustable */
+  
+}
+
+header button {
+    background-color: #3FB28B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2vw; /* Tamaño de fuente ajustable */
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-self: flex-end; /* Alinea el botón a la derecha */
+}
+
+header button:hover {
+    background-color: #34a075;
 }
 
 
+
 .nav-desktop {
-    background-color: white;
+    background-color: #01284E;
     padding: 10px;
     width: 100%;
     min-height: 48px;
@@ -162,8 +192,10 @@ header h4 {
   }
 
 .feat-link a {
+        color: white;
+
     padding: 5px 15px;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 500;
     display: flex;
     border-style: 1px solid black;
@@ -181,10 +213,10 @@ header h4 {
 
 .grey-link a {
     padding: 5px 15px;
-    font-size: 1rem;
+    font-size: 22px;
     font-weight: 400;
     display: flex;
-    color: #666;
+    color: white;
     transition: all 0.3s;
     transition-timing-function: ease-out;
     /*align-items: center;*/
@@ -312,7 +344,7 @@ section {
 }
 
 section.featured {
-    background-color: #f0f0f0;
+    background-color: rgb(1, 40, 78,0.5);
     padding: 0 0 64px 0;
     display: flex;
     flex-direction: column;
@@ -325,7 +357,7 @@ section.featured {
 .card-container {
     /*background-color: gray;*/
     margin: 10px auto;
-    width: 960px;
+    width: 1000px;
     max-width: 1040px;
     height: auto;
     display: flex;
@@ -491,6 +523,220 @@ p.small {
     }
 }
 
+
+#LOGO{
+width: 200px;
+height: 100px;
+
+}
+
+
+        .container--redes{
+  width:400px;
+  left:0;
+  position:fixed;
+  top:25%;
+    z-index: 9999; /* Valor alto para asegurar que esté por encima de todo */
+
+  }
+
+
+
+.icon{
+  top:50%;
+  position:relative;
+  margin-bottom:10px;
+  }
+
+
+.icon-primary{
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#3b5998;
+  border-radius:100%;
+  position:relative;
+  z-index:1;
+  box-shadow:1px 0 1px rgba(0,0,0,.5);
+  height:40px;
+  width:40px;
+  text-align:center;
+  line-height:40px;
+  }
+
+.container-description{
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:24px;
+
+}
+
+.icon-description{
+  width:250px;
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#3b5998;
+  height:40px;
+  line-height:40px;
+  padding-left:40px;
+  border-radius:0 20px 20px 0;
+  transform: translate3d(-110%, 0, 0);
+  transition:transform 175ms ease;
+}
+
+.icon-primary:hover  ~ .container-description .icon-description{
+     transform: translate(0, 0);
+  
+}
+
+/*colores para redes sociales*/
+.color-twitter{
+  background-color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.color-whatsapp {
+
+  background-image: url('imagenes/whatsapp.png');
+  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
+  width: 40px; /* Ancho del icono, ajusta según sea necesario */
+  height: 40px; /* Alto del icono, ajusta según sea necesario */
+  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
+  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
+}
+
+
+
+
+.color-whatsapp-text {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-image: url('imagenes/whatsapp.png');
+    background-size: cover;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
+}
+
+.color-whatsapp-text span {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    z-index: 1; /* Asegura que el texto esté por encima del fondo */
+}
+
+
+
+
+
+
+.color-gmail {
+
+    background-image: url('imagenes/gmail.png');
+  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
+  width: 40px; /* Ancho del icono, ajusta según sea necesario */
+  height: 40px; /* Alto del icono, ajusta según sea necesario */
+  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
+  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
+}
+
+
+
+
+
+.color-gmail-text {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-size: cover;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
+}
+
+.color-gmail-text span {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    z-index: 1; /* Asegura que el texto esté por encima del fondo */
+}
+
+     #fotoo{
+border-radius: 18px;
+            width: 500px;
+
+
+        }
+        /* Estilos de la sección de atención */
+        .attention {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .attention .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .attention-text {
+            width: 60%;
+        }
+
+        .attention-text h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .attention-text p {
+            font-size: 1.125rem;
+            color: #666;
+        }
+
+        .attention-image {
+            width: 30%;
+        }
+.cuadro-color {
+    position: absolute;
+    right: 90px;
+    background-color: #3FB28B;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Ajusta el ancho según necesites */
+    z-index: 999;
+    top: 1050px;
+    border: 1px solid black; /* Asegura que esté por encima de otros elementos si es necesario */
+}
+
+.cuadro-color h5 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0;
+}
+
 </Style>
 <nav class="nav-responsive">
     <a href="index.html">
@@ -509,29 +755,19 @@ p.small {
     
 <nav class="nav-desktop">
     <a href="index.html">
-        <div class="logo-box">
-            <svg class="nav-logo" viewBox="0 0 170 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs></defs>
-                <g id="nav-lo   go-color" fill="#3FB28B" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Desktop-HD" transform="translate(-220.000000, -24.000000)"  fill-rule="nonzero">
-                <g id="Group" transform="translate(28.000000, 24.000000)">
-                <g id="errotuz_logo-01" transform="translate(192.000000, 0.000000)">
-                <path d="M13.5122581,8.14903226 C9.81064516,8.14903226 3.04354839,5.95548387 3.04354839,10.6551613 C3.04354839,11.6970968 2.55548387,17.8170968 3.46032258,17.8170968 C4.72709677,17.8170968 10.5893548,17.126129 10.5893548,18.4312903 C10.5893548,21.5790323 7.06870968,20.1970968 4.55709677,20.1970968 C1.85354839,20.1970968 3.06548387,23.7451613 3.06548387,26.2293548 C3.06548387,29.6787097 2.15516129,30.5616129 5.37967742,30.5616129 C6.38870968,30.5616129 13.2819355,29.7719355 13.7809677,30.5616129 C16.1774194,34.3619355 3.01064516,32.9416129 1.28870968,32.9416129 C-0.570322581,32.9416129 0.438709677,21.3267742 0.438709677,19.3416129 C0.438709677,17.3564516 -0.548387097,5.76903226 1.25032258,5.76903226 C3.95387097,5.76903226 14.6858065,3.69064516 13.5122581,8.14903226 Z M16.9506452,5.62645161 C22.9829032,5.37419355 31.4883871,5.75258065 30.2325806,14.4006452 C29.5032258,19.4567742 24.7651613,18.8809677 27.4193548,23.5806452 L32.4754839,32.4864516 C32.5245215,32.5773208 32.5272421,32.6861383 32.4828066,32.7793444 C32.4383711,32.8725505 32.352117,32.9389498 32.2506452,32.9580645 C27.7922581,33.8574194 25.67,25.7358065 23.8164516,22.3577419 C22.3522581,19.6487097 19.5829032,21.3103226 19.5829032,24.0029032 C19.5829032,25.2258065 20.3835484,32.0916129 19.5829032,32.8264516 C15.7058065,36.3470968 16.956129,23.6354839 16.956129,22.5990323 C16.956129,16.9396774 16.5941935,9.31709677 16.956129,5.63193548 L16.9506452,5.62645161 Z M22.0616129,18.5793548 C31.7516129,17.1590323 26.3993548,6.65193548 20.0764516,8.35193548 C19.1935484,8.59322581 19.0564516,11.05 19.2922581,13.6054839 C19.5609677,16.5832258 19.9503226,19.1441935 22.0341935,18.5793548 L22.0616129,18.5793548 Z M35.2009677,5.62645161 C41.2332258,5.37419355 49.7441935,5.75258065 48.4883871,14.4006452 C47.7590323,19.4458065 43.0045161,18.87 45.6696774,23.5422581 L50.7367742,32.4645161 C50.7839407,32.5517916 50.7868778,32.6562751 50.7446886,32.7460624 C50.7024994,32.8358497 50.6201935,32.9002793 50.5229032,32.9196774 C46.0645161,33.8519355 43.8983871,25.7083871 42.0667742,22.3303226 C40.5806452,19.6212903 37.8387097,21.2829032 37.8387097,23.9974194 C37.8387097,25.2203226 38.6393548,32.086129 37.8387097,32.8209677 C33.9670968,36.3416129 35.2064516,23.63 35.2064516,22.5935484 C35.2064516,16.9341935 34.85,9.3116129 35.2064516,5.62645161 L35.2009677,5.62645161 Z M40.3174194,18.5793548 C50.0074194,17.1590323 44.6551613,6.65193548 38.3322581,8.35193548 C37.4493548,8.59322581 37.3122581,11.05 37.5425806,13.6054839 C37.8167742,16.5832258 38.2006452,19.1441935 40.3174194,18.5793548 Z M59.9990323,5.23709677 C70.9667742,5.23709677 71.0709677,33.49 59.9990323,33.49 C49.0312903,33.49 48.8503226,5.23709677 59.9990323,5.23709677 Z M65.11,19.3635484 C65.11,15.7990323 65.3622581,9.3883871 61.4687097,7.88032258 C55.9848387,5.76354839 54.8880645,13.8796774 54.8880645,17.7512903 C54.8880645,21.6229032 54.2903226,29.0645161 58.436129,30.813871 C64.556129,33.4022581 65.11,23.1748387 65.11,19.3635484 Z M85.9541935,8.14903226 C83.9306452,8.14903226 78.7758065,6.77258065 78.7758065,9.40483871 L78.7758065,23.9041935 C78.7758065,25.3519355 79.5545161,32.9635484 78.0958065,32.9635484 C74.5148387,32.9635484 76.1490323,27.1945161 76.1490323,23.9041935 L76.1490323,9.40483871 C76.1490323,5.87870968 69.1077419,9.95322581 69.1077419,7.52935484 C69.1077419,4.13483871 74.8932258,5.76903226 77.5309677,5.76903226 C80.1687097,5.76903226 86.8535484,3.8716129 85.9541935,8.14903226 Z M102.696452,5.76903226 C102.696452,12.7993548 106.123871,33.49 95.7264516,33.49 C84.7587097,33.49 89.1841935,5.75806452 89.4035484,5.76903226 C95.1890323,6.01032258 86.826129,28.56 94.4925806,30.94 C105.591935,34.3783871 95.9787097,3.45483871 102.718387,5.76903226 L102.696452,5.76903226 Z M119.159032,5.76903226 C118.117097,8.75774194 116.159355,14.3732258 114.684194,17.6251613 L108.794516,30.5835484 C111.695484,30.5835484 120.003548,28.8232258 120.003548,32.343871 C120.003548,33.6380645 108.257097,32.9635484 106.436452,32.9635484 C104.615806,32.9635484 114.782903,11.1158065 116.148387,8.14903226 C115.051613,8.14903226 103.052903,8.92225806 106.025161,5.76903226 C107.489355,4.21709677 116.877742,5.76903226 119.159032,5.76903226 Z M159.114516,35.9467742 C159.306538,34.4597352 159.370751,32.958974 159.306452,31.4609677 C159.277149,30.6368997 159.203927,29.8149802 159.087097,28.9987097 C160.19979,30.69115 161.055435,32.5391951 161.626129,34.4825806 C160.824033,35.0285211 159.984786,35.5177759 159.114516,35.9467742 Z M147.823226,0.696451613 C148.004194,4.67225806 145.311613,8.05032258 142.586129,10.8635484 C139.860645,13.6767742 136.296129,16.106129 134.310968,19.6377419 C132.766219,22.4917721 132.050128,25.7208278 132.243548,28.9603226 C130.378486,26.0783946 129.384542,22.7195507 129.380968,19.2867742 C129.380968,9.41580645 137.508065,1.31064516 147.834194,0.460645161 C147.824382,0.538839995 147.820715,0.61768363 147.823226,0.696451613 Z M155.401935,37.3670968 C153.523667,37.8908861 151.582838,38.1565509 149.632903,38.1567742 C149.232581,38.1567742 148.832258,38.1567742 148.437419,38.1129032 C148.50871,37.9429032 148.590968,37.783871 148.667742,37.6358065 C149.929032,35.1406452 151.958065,33.1116129 153.603226,30.8577419 C154.402549,29.7732717 155.002344,28.5551123 155.374516,27.2603226 C155.616029,28.2967259 155.786426,29.3484238 155.884516,30.4080645 C156.144317,32.7378698 155.980829,35.0954516 155.401935,37.3670968 Z M148.92,31.45 C147.421881,33.1797992 146.179064,35.1151223 145.229355,37.1970968 C145.163548,37.3506452 145.103226,37.5041935 145.053871,37.6577419 C143.361645,37.293465 141.720625,36.7225153 140.167742,35.9577419 C140.129355,35.8151613 140.101935,35.6835484 140.096452,35.6725806 C140.082628,35.4442951 140.082628,35.2153823 140.096452,34.9870968 C140.644839,31.916129 143.282581,29.196129 145.426774,27.0025806 C147.838581,24.5839871 149.631335,21.6192646 150.652903,18.36 C151.349355,20.0435484 152.171935,21.7216129 152.374839,23.5258065 C152.747742,26.6954839 150.883226,29.0645161 148.92,31.45 Z M148.234516,9.24032258 C147.954839,11.4667742 148.283871,13.726129 147.834194,15.9580645 C147.44973,17.8753871 146.737346,19.7120026 145.728387,21.3870968 C144.384839,23.6464516 142.372258,25.4012903 140.677742,27.4193548 C139.070968,29.3387097 137.475161,31.5377419 136.92129,33.9725806 C136.817875,33.9000766 136.718981,33.821328 136.625161,33.7367742 C134.903226,29.1687097 135.303548,23.7670968 138.155161,19.7419355 C139.197097,18.2667742 140.694194,17.0987097 142.04871,15.9032258 C143.586496,14.5237548 145.045671,13.0590873 146.419355,11.516129 C147.065925,10.7915899 147.671905,10.0318262 148.234516,9.24032258 Z M169.879355,19.2429032 C169.852844,24.1096555 167.877763,28.7629456 164.395484,32.1629032 C162.820869,28.0603325 160.218793,24.4310225 156.83871,21.6229032 C156.070968,20.0654839 155.193548,18.5464516 154.497097,16.9506452 C152.777347,13.0439121 151.779622,8.85792531 151.552258,4.59548387 C151.485537,3.34353458 151.503859,2.0885004 151.607097,0.839032258 C151.607097,0.701935484 151.607097,0.56483871 151.645484,0.427741935 C161.872903,1.37645161 169.879355,9.45419355 169.879355,19.2429032 Z" id="Shape"></path>
-                </g>
-                </g>
-                </g>
-                </g>
-            </svg>
-        </div>
+<div class="logo-box">
+    <img class="nav-logo"  id="LOGO" src="imagenes/LOGO JENIFER.png" alt="Logo">
+</div>
+
     </a>
                 
     <ul>
-        <li class="feat-link"><a href="investigacion.html">Investigación</a></li>
-        <li class="feat-link"><a href="asesoria.html">Asesoría</a></li>
-        <li class="feat-link"><a href="educacion-ambiental.html">Educación Ambiental</a></li>
+        <li class="feat-link"><a href="investigacion.html">INICIO</a></li>
+        <li class="feat-link"><a href="asesoria.html">ASESORIA</a></li>
+        <li class="feat-link"><a href="educacion-ambiental.html">SERVICIOS</a></li>
         <div class="nav-separator"></div>
-        <li class="grey-link"><a href="vision-errotuz.html">Visión Errotuz</a></li>
-        <li class="grey-link"><a href="contacto.html">Contacto</a></li>
+        <li class="grey-link"><a href="vision-errotuz.html">CONOZCANOS</a></li>
+        <li class="grey-link"><a href="contacto.html">CONTACTENOS</a></li>
     </ul>
 </nav>
 
@@ -539,41 +775,131 @@ p.small {
     <ul>
         <li class="feat-link-resp">
             <a href="investigacion.html">
-                Investigación
+                INICIO
             </a>
         </li>
         <li class="feat-link-resp">
             <a href="asesoria.html">
-                Asesoría
+                ASESORIA
             </a>
         </li>
         <li class="feat-link-resp">
             <a href="educacion-ambiental.html">
-                Educación Ambiental
+                SERVICIOS
             </a>
         </li>
         <li class="grey-link-resp">
             <a href="vision-errotuz">
-                Visión
+                CONOZCANOS
             </a>
         </li>
         <li class="grey-link-resp">
             <a href="contacto.html">
-                Contacto
+                CONTACTENOS
             </a>
         </li>
     </ul>
 </nav>
 
 <header>
-    <h4>Por un uso sostenible de los recursos forestales</h4>
+    <h4>Asesorías contables y tributarias revisoría fiscal AF</h4>
+    <H6>Los buenos consejos garantizan mejores resultados</H6>
+    <button>CONOCE MAS DE NUESTRES SERVICIOS</button>
     <div class="header-filter">
+
     </div>
 </header>
 
+
+
+<article class="container--redes">
+  <!--incio de el primer icono-->
+    <div class="icon">
+      <a class="icon-primary" href="#">f</a>	
+
+      <div class="container-description">
+        <a class="icon-description" href="#">OBTENER INFORMACION</a>	
+      </div>
+    </div>
+
+  <!--incio segundo icono-->
+<div class="icon">
+    <a class="icon-primary color-gmail" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20m%C3%A1s%20informaci%C3%B3n">
+        W
+    </a>	
+    <div class="container-description">
+        <a class="icon-description color-gmail-text" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20m%C3%A1s%20informaci%C3%B3n">
+            OBTENER INFORMACIÓN
+        </a>	
+    </div>
+</div>
+
+
+<div class="icon">
+    <a class="icon-primary color-whatsapp" href="https://wa.me/573165362193?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+        W
+    </a>	
+    <div class="container-description">
+        <a class="icon-description color-whatsapp-text" href="https://wa.me/573165362193?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+            OBTENER INFORMACIÓN
+        </a>	
+    </div>
+</div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="atencion" class="attention">
+        <div class="container">
+            <div class="attention-text">
+                <h2>ANDREA FRANCO</h2>
+                <h4>CONTADORA PUBLICA</h4>
+<ul>
+<li>Asesotia contable y tributartarias</li>
+<li>Propiedad horaria</li>
+<li>Revisoria Fiscal</li>
+
+
+</ul>
+
+<p>Contamos con certificados en asesoría contable, asegurando la excelencia en cada servicio que brindamos.</p>
+            </div>
+
+            <div class="attention-image">
+                <img id="fotoo" src="imagenes/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.avif" alt="Descripción de la imagen">
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+
+
+<section class="cuadro-color">
+    <h5>GESTIÓN DE RIESGO EMPRESARIAL. CONSULTORÍA Y AUDITORÍA CONTABLE, FINANCIERA Y TRIBUTARIA PARA EMPRESAS Y PERSONAS NATURALES.</h5>
+</section>
+
+
+
+
+
+
+
 <section class="featured">
     <div class="title-container">
-         <h4>Proyectos recientes</h4>
+         <h4>SERVICIOS PRINCIPALES</h4>
     </div>
      
     <div class="card-container">
