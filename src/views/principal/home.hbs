@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<  <head>
+ <head>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
         <meta name="author" content="Javiera Craig">
         <title>ASESORIA CONTABLE</title>
         <meta name="description" content="Asociación para la promoción del uso sostenible de los recursos forestales">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/32x32.png">
-        <link rel="icon" type="image/png" size="16x16" href="assets/favicon/16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="">
+        <link rel="icon" type="image/png" size="16x16" href="imagenes/LOGO JENIFER.png">
         <html lang="es-ES"></html>
         <meta name="viewport" content="width=device-width">
     </head>
@@ -62,72 +62,67 @@ body {
     width: auto;
     height: auto;
 }
-header {
-    background-color: white;
-    background-image: url('imagenes/luxa.org-opacity-changed-contador.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 0;
-    width: 100%;
-    min-height: 25vw;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Alinea los elementos al centro verticalmente */
-    position: relative;
-}
+    header {
+            background-color: white;
+            background-image: url('imagenes/luxa.org-opacity-changed-contador.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 0;
+            width: 100%;
+            min-height: 25vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
 
-.header-content {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Alinea los elementos al inicio */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
-    width: 80%; /* Ancho ajustable según necesidad */
-    max-width: 800px; /* Máximo ancho para evitar que se estire demasiado */
-    position: relative;
-    z-index: 1;
-    text-align: left; /* Alineación del texto a la izquierda */
-}
+        .header-content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
 
-header h4 {
-    color: white;
-    font-weight: lighter;
-    font-size: 2.7vw;
-    position: relative;
-    left: 210px; /* Tamaño de fuente ajustable */
-    margin: 0;
-    top: -120px;
-}
+        header h4 {
+            position: relative;
+            color: white;
+            font-weight: lighter;
+            font-size: 2.7vw;
+            margin: 0;
+            left: 5%;
+        }
 
-header h6 {
-    color: white;
-    font-weight: lighter;
-    font-size: 1.5vw;
-    position: relative;
-    left: -1037px;
-    top:50px /* Tamaño de fuente ajustable */
-  
-}
+        header h6 {
+                        position: relative;
+            right: 45%;
+            top: 90px;
+            color: white;
+            font-weight: lighter;
+            font-size: 1.5vw;
+            margin: 5px 0 0 0; /* Añadir margen superior para separar del h4 */
+        }
 
-header button {
-    background-color: #3FB28B;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2vw; /* Tamaño de fuente ajustable */
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    align-self: flex-end; /* Alinea el botón a la derecha */
-}
+        header button {
+            background-color: #228B22;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2vw;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-header button:hover {
-    background-color: #34a075;
-}
-
-
+        header button:hover {
+            background-color: #34a075;
+        }
 
 .nav-desktop {
     background-color: #01284E;
@@ -344,15 +339,29 @@ section {
 }
 
 section.featured {
-    background-color: rgb(1, 40, 78,0.5);
+    position: relative;
     padding: 0 0 64px 0;
     display: flex;
     flex-direction: column;
-    /*min-width: 100vh;*/
     min-height: 55vh;
-    /*width: 100%;*/
     justify-content: center;
+    overflow: hidden; /* Asegura que los degradados no desborden la sección */
 }
+
+section.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que esté detrás del contenido */
+    background: linear-gradient(to bottom right, #01284e 50%, transparent 50%);
+}
+
+
+
+
 
 .card-container {
     /*background-color: gray;*/
@@ -368,20 +377,22 @@ section.featured {
 
 
 .title-container {
-    /*background-color: gray;*/
-    margin: 64px 0;
-    padding: 0 0 0 20px;
-    /* width: 960px; */
-    width: 960px;
-    /* width: 95vw; */
-    height: auto;
+    color: white;
+        background-color: rgb(1, 40, 78,0.7); /* Fondo oscuro para contraste */
+
+    margin: 64px auto; /* Centramos el contenedor horizontalmente */
+    padding: 20px; /* Añadimos espacio alrededor del contenido */
+    width: 80%; /* Hacemos el contenedor un poco más ancho */
+    max-width: 960px; /* Limite máximo de anchura */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+    text-align: center; /* Centrar el texto */
     display: flex;
-    align-self: center;
     flex-direction: column;
-    /* flex-wrap: nowrap; */
-    justify-content: flex-start;
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
 }
+
 
 .title-container h3 {
     margin: 0 auto 0 0;
@@ -411,18 +422,18 @@ section.featured {
 }
 
 .card-inv {
-    background-image: url(https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(imagenes/servicio1.jpeg);
     background-size: cover;
 }
 
 .card-edu {
-    background-image: url(https://image.freepik.com/foto-gratis/trekking-bosque_53876-30630.jpg);
+    background-image: url(imagenes/servi2.jpg);
     background-size: cover;
 
 }
 
 .card-ases {
-    background-image: url(https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(imagenes/servi3.jpeg);
     background-size: cover;
     background-position: right;
 
@@ -457,14 +468,6 @@ section.featured {
   }
 
 
-.footer {
-    background-color: #ffffff;
-    height: 64px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 p.small {
@@ -504,6 +507,7 @@ p.small {
 @media screen and (max-width: 970px) {
     
     .title-container {
+    
         padding: 0;
         text-align: center;
         width: 100%;
@@ -680,14 +684,23 @@ height: 100px;
     z-index: 1; /* Asegura que el texto esté por encima del fondo */
 }
 
-     #fotoo{
-border-radius: 18px;
-            width: 500px;
-
-
+  #fotoo {
+            border-radius: 18px;
+            width: 70%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            border: 5px solid white; /* Borde */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación */
         }
+
+        #fotoo:hover {
+            transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+        }
+
         /* Estilos de la sección de atención */
         .attention {
+            position: relative;
+            left: 5%;
             background: white;
             padding: 4rem 0;
         }
@@ -695,11 +708,14 @@ border-radius: 18px;
         .attention .container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
         }
 
         .attention-text {
             width: 60%;
+            padding: 0 1rem;
+            box-sizing: border-box;
         }
 
         .attention-text h2 {
@@ -708,36 +724,189 @@ border-radius: 18px;
             margin-bottom: 1rem;
         }
 
+        .attention-text h4 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .attention-text ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
         .attention-text p {
             font-size: 1.125rem;
             color: #666;
         }
 
         .attention-image {
-            width: 30%;
+            width: 40%;
+            padding: 0 1rem;
+            box-sizing: border-box;
         }
-.cuadro-color {
-    position: absolute;
-    right: 90px;
-    background-color: #3FB28B;
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px; /* Ajusta el ancho según necesites */
-    z-index: 999;
-    top: 1050px;
-    border: 1px solid black; /* Asegura que esté por encima de otros elementos si es necesario */
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            .attention .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .attention-text,
+            .attention-image {
+                width: 100%;
+                padding: 0;
+            }
+
+            .attention-text {
+                margin-bottom: 2rem;
+            }
+        }
+     .cuadro-color {
+            width: 30%; /* Aumentado el ancho para mejor visibilidad */
+            position: absolute;
+            left: 30%;
+            transform: translateX(-50%); /* Centra el cuadro horizontalmente */
+            background-color: #228B22;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mejorada */
+            text-align: center;
+            z-index: 999;
+            top: 850px;
+            border: 5px solid white; /* Borde mejorado */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación */
+        }
+
+        .cuadro-color:hover {
+            transform: translateX(-50%) scale(1.05); /* Escala al pasar el ratón */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+        }
+
+        .cuadro-color h5 {
+            margin: 0; /* Elimina márgenes para un mejor ajuste del texto */
+            font-size: 18px; /* Tamaño de fuente ajustado */
+        }
+     #correos {
+            height: 40px; /* Ajusta la altura según sea necesario */
+            background-color: #666;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            box-sizing: border-box;
+            color: black;
+            font-size: 14px;
+        }
+        .contacto-item {
+            display: flex;
+            align-items: center;
+        }
+        .contacto-item img {
+            width: 20px; /* Ajusta el tamaño de las imágenes según sea necesario */
+            height: 20px;
+            margin-right: 5px;
+        }
+        /* Añadir a tu CSS existente */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-.cuadro-color h5 {
-    font-size: 1.5em;
-    font-weight: normal;
-    margin-top: 0;
+/* Verificar ancho del container--redes */
+.container--redes {
+    width: 100%; /* Asegúrate de que el contenedor no exceda el 100% del ancho */
 }
+
+/* Asegurarse de que los elementos dentro de nav-desktop no se desborden */
+.nav-desktop ul {
+    flex-wrap: nowrap; /* Evita el desbordamiento en las listas */
+}
+
+/* Ajustar anchos específicos si es necesario */
+header, .nav-desktop, .dropdown-menu {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.footer {
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #3fb28b;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
 
 </Style>
+    <section id="correos">
+        <div class="contacto-item">
+            <img src="imagenes/gmail.png" alt="Correo">
+            <h5 id="micorreo">andreafrancocontadora@gmail.com</h5>
+        </div>
+        <div class="contacto-item">
+            <img src="imagenes/llamada.png" alt="Teléfono">
+            <span>3223958005 - 3219724076</span>
+        </div>
+    </section>
 <nav class="nav-responsive">
     <a href="index.html">
         <div class="nav-logo-resp">
@@ -859,36 +1028,28 @@ border-radius: 18px;
 
 
 
-
-
-    <section id="atencion" class="attention">
+ <section id="atencion" class="attention">
         <div class="container">
             <div class="attention-text">
                 <h2>ANDREA FRANCO</h2>
-                <h4>CONTADORA PUBLICA</h4>
-<ul>
-<li>Asesotia contable y tributartarias</li>
-<li>Propiedad horaria</li>
-<li>Revisoria Fiscal</li>
-
-
-</ul>
-
-<p>Contamos con certificados en asesoría contable, asegurando la excelencia en cada servicio que brindamos.</p>
+                <h4>CONTADORA PÚBLICA</h4>
+                <ul>
+                    <li>Asesoría contable y tributarias</li>
+                    <li>Propiedad horizontal</li>
+                    <li>Revisoría Fiscal</li>
+                </ul>
             </div>
-
             <div class="attention-image">
-                <img id="fotoo" src="imagenes/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.avif" alt="Descripción de la imagen">
+                <img id="fotoo" src="imagenes/fotojenifer.jpg" alt="Andrea Franco">
             </div>
         </div>
-    </section>
     </section>
 
 
 
 
 <section class="cuadro-color">
-    <h5>GESTIÓN DE RIESGO EMPRESARIAL. CONSULTORÍA Y AUDITORÍA CONTABLE, FINANCIERA Y TRIBUTARIA PARA EMPRESAS Y PERSONAS NATURALES.</h5>
+    <h5>RECUERDA TODOS NUESTROS SERVICIOS SON 100% VIRTUALES </h5>
 </section>
 
 
@@ -941,10 +1102,34 @@ border-radius: 18px;
 </section> 
 
 
-<div class="footer">
-   <p class="small">© Errotuz 2018</p>  
-</div>     
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una empresa dedicada a la asesoría contable, ofreciendo servicios de calidad para nuestros clientes.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="asesoria.html">Asesoría</a></li>
+                    <li><a href="investigacion.html">Investigación</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="mailto:andreafrancocontadora@gmail.com">andreafrancocontadora@gmail.com</a></li>
+                    <li><a href="tel:+573223958005">3223958005</a></li>
+                    <li><a href="tel:+573219724076">3219724076</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Asesoría Contable | Diseñado por NEXUS INNOVATIONS
+        </div>
+    </footer>
 </body>
 <script src="errotuz.js">   
 </script>
