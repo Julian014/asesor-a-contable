@@ -894,7 +894,30 @@ header, .nav-desktop, .dropdown-menu {
         margin-bottom: 20px;
     }
 }
+.clients {
+    background: #fff; /* Cambia el color de fondo según tu diseño */
+    padding: 4rem 0;
+}
 
+.clients .container {
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ajusta el número de columnas según tu diseño */
+    gap: 20px;
+}
+
+.client-item img {
+    max-width: 100%;
+    height: auto;
+}
 
 </Style>
     <section id="correos">
@@ -1093,13 +1116,29 @@ header, .nav-desktop, .dropdown-menu {
     </div>    
 </section>
 
-<section>
-    <a href="https://plus.google.com/115044885163604610880"> 
-        <div class="button cta-main">
-            <span class="cta-text">Blog Errotuz</span>
+  
+<section id="clientes" class="clients">
+    <div class="container">
+        <h2>Nuestros Clientes</h2>
+        <div class="client-grid">
+            <div class="client-item">
+                <img src="imagenes/cliente1.png" alt="Cliente 1">
+            </div>
+            <div class="client-item">
+                <img src="imagenes/cliente2.png" alt="Cliente 2">
+            </div>
+            <div class="client-item">
+                <img src="imagenes/cliente3.png" alt="Cliente 3">
+            </div>
+            <!-- Agrega más clientes aquí -->
         </div>
-    </a>    
-</section> 
+    </div>
+</section>
+
+
+
+
+
 
 
     <footer class="footer">
