@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Asesor Contable</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<Style>
+    body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('/imagenes/luxa.org-opacity-changed-contador.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header h6 {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+header button {
+    background-color: #228B22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #34a075;
+}
+
+.contact-info {
+    background-color: #f4e1d2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    margin: 10px 20px;
+    transition: transform 0.3s;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #228B22;
+}
+
+.contacto {
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.contacto h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.contacto h4:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #228B22;
+    margin: 10px auto 0;
+}
+
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-outer {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.flex-outer li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.flex-outer li label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.flex-outer li input,
+.flex-outer li textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.flex-outer li.center {
+    text-align: center;
+}
+
+.flex-outer li.center button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.flex-outer li.center button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #4CAF50;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i');
+
+* {
+    box-sizing: border-box;
+   }
+
+
+a {
+    text-decoration: none;
+    color: #333333;
+  }
+
+h1 {
+    font-size: 2rem;
+     }
+
+h2 {
+    font-size: 1.75rem;
+  }
+
+h3 {
+    font-family: "Cabin";
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+   }
+
+h4 {
+    font-size: 1.25rem;
+  }
+
+h5 {
+    font-size: 1.125rem;
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+}
+    header {
+            background-color: white;
+            background-image: url('imagenes/luxa.org-opacity-changed-contador.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 0;
+            width: 100%;
+            min-height: 25vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .header-content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        header h4 {
+            position: relative;
+            color: white;
+            font-weight: lighter;
+            font-size: 2.7vw;
+            margin: 0;
+            left: 5%;
+        }
+
+  header h6 {
+        color: white;
+        font-weight: lighter;
+        font-size: 1.5vw;
+        margin: 20px 0 0 0; /* Añadir margen superior para separar del h4 */
+        position: relative;
+        right: 0; /* Centramos de nuevo quitando el desplazamiento */
+    }
+        header button {
+            background-color: #228B22;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2vw;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #34a075;
+        }
+
+.nav-desktop {
+    background-color: #01284E;
+    padding: 10px;
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+    .nav-desktop {
+        display: none;
+    }
+}
+
+.nav-logo {
+    /*5background-color: aqua;*/
+    padding: 0 0 0 25px;
+    width: auto;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+.nav-logo:hover {
+    transform: translate(0, 0) scale(1.04);
+    transform-origin: center bottom;
+}
+
+.nav-logo svg:hover {
+    box-shadow: 5px 10px 10px rgba(56, 56, 56, 1);
+}
+
+.nav-separator {
+    margin: 0 15px;
+    background-color: #333333;
+    display: flex;
+    width: 1px;
+    height: 1.5em;
+}
+
+.nav-desktop ul {
+    padding: 0 20px 0 0;
+    /*background-color: aquamarine;*/
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: right;
+    min-height: inherit;
+    margin: 0 0 0 auto;
+  }
+
+.nav-desktop li {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+.feat-link a {
+        color: white;
+
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    border-style: 1px solid black;
+    transition: all 0.3s;
+    transition-timing-function: ease;
+
+  }
+
+.feat-link a:hover {
+    box-shadow: 2.5px 4px rgb(51, 51, 51);
+    transform: translate(-2px, -2px);
+    border-style: 1px solid black;
+    /* font-weight: 600; */
+  }
+
+.grey-link a {
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    color: white;
+    transition: all 0.3s;
+    transition-timing-function: ease-out;
+    /*align-items: center;*/
+  }
+
+.grey-link a:hover {
+    /* font-weight: 500; */
+    box-shadow: 2.5px 4px rgb(63, 178, 139);
+    transform: translate(0, -2px);
+  }
+
+.nav-responsive {
+    background-color: white;
+    padding: 10px 15px;
+    width: 100vw;
+    min-height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-logo-resp {
+    background-image: url(assets/icons/errotuz_logo_resp.svg);
+    /* background-color: #333; */
+    height: 32px;
+    width: 31px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: 2;
+}
+
+/* .nav-logo-resp a {
+    display: flex;
+} */
+
+.hamburger {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+    height: 21px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    cursor: pointer;
+}
+
+.rectangle {
+  display: flex;
+  background-color: #bbbbbb;
+  height: 4px;
+  width: 100%;
+}
+
+.dropdown-menu {
+    background-color: #f0f0f0;
+    padding: 16px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.dropdown-menu.visible {
+    background-color: #fff;
+    box-shadow: 4px 12px 20px rgba(3, 38, 43, 0.164); 
+    padding: 16px;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+    pointer-events: unset;
+}
+
+@media screen and (min-width: 850px) {
+    .nav-responsive {
+        display: none;
+    }
+
+    .dropdown-menu.visible {
+        display: none;
+    }
+
+}
+
+.dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu li {
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-menu li:active {
+    background-color: #3fb28b;
+}
+
+.dropdown-menu li:active a {
+    color: white;
+}
+#LOGO{
+width: 200px;
+height: 100px;
+
+}
+
+</Style>
+<body>
+    <nav class="nav-responsive">
+    <a href="index.html">
+        <div class="nav-logo-resp">
+        </div>
+    </a> 
+    <div class="hamburger">
+        <div class="rectangle">
+        </div>
+        <div class="rectangle">
+        </div>
+        <div class="rectangle">
+        </div>
+    </div>      
+</nav>
+    
+<nav class="nav-desktop">
+    <a href="index.html">
+<div class="logo-box">
+    <img class="nav-logo"  id="LOGO" src="imagenes/LOGO JENIFER.png" alt="Logo">
+</div>
+
+    </a>
+                
+    <ul>
+        <li class="feat-link"><a href="/principal">INICIO</a></li>
+        <li class="feat-link"><a href="/servicios">SERVICIOS</a></li>
+        <div class="nav-separator"></div>
+        <li class="grey-link"><a href="/informacion">INFORMACION</a></li>
+        <li class="grey-link"><a href="/contacto">CONTACTENOS</a></li>
+    </ul>
+</nav>
+</nav>
+
+<nav class="dropdown-menu">
+    <ul>
+        <li class="feat-link-resp">
+            <a href="investigacion.html">
+                INICIO
+            </a>
+        </li>
+        <li class="feat-link-resp">
+            <a href="asesoria.html">
+                ASESORIA
+            </a>
+        </li>
+        <li class="feat-link-resp">
+            <a href="educacion-ambiental.html">
+                SERVICIOS
+            </a>
+        </li>
+        <li class="grey-link-resp">
+            <a href="vision-errotuz">
+                CONOZCANOS
+            </a>
+        </li>
+        <li class="grey-link-resp">
+            <a href="contacto.html">
+                CONTACTENOS
+            </a>
+        </li>
+    </ul>
+</nav>
+    <header>
+        <div class="header-content">
+            <h1>Contacto</h1>
+            <h6>Estamos aquí para ayudarte con todas tus necesidades contables</h6>
+            <button onclick="scrollToContactForm()">Contáctanos</button>
+        </div>
+    </header>
+    <section class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>andreafrancocontadora@gmail.com</span>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>3223958005</span>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>+57 3223958005</span>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <h4>Envíanos un mensaje</h4>
+        <div class="contacto-container">
+            <form id="contact-form" action="/enviar" method="post">
+                <ul class="flex-outer">
+                    <li>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Ingresa Nombre" class="rect" required>
+                    </li>
+                    <li>
+                        <label for="correo">Correo</label>
+                        <input type="email" name="correo" placeholder="Ingresa Correo" class="rect" required>
+                    </li>
+                    <li>
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" name="telefono" placeholder="Ingresa Teléfono" class="rect" required>
+                    </li>
+                    <li>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea rows="6" name="mensaje" class="rect" required></textarea>
+                    </li>
+                    <li class="center">
+                        <button type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h4>Síguenos en nuestras redes sociales</h4>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Asesor Contable. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts.js" defer></script>
+    <script>
+        function scrollToContactForm() {
+            document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+    $('#contact-form').on('submit', function(event) {
+        event.preventDefault();
+
+        $.ajax({
+            type: 'POST',
+            url: '/enviar',
+            data: $(this).serialize(),
+            success: function(response) {
+                alert('El mensaje se ha enviado correctamente.');
+                $('#contact-form')[0].reset();
+            },
+            error: function(error) {
+                alert('Hubo un error al enviar el mensaje. Por favor, inténtelo de nuevo.');
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

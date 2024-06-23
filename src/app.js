@@ -55,6 +55,36 @@ app.post('/chatbot', (req, res) => {
 
 
 
+// Ruta para manejar el envío del formulario
+app.post('/enviar', (req, res) => {
+    const { nombre, correo, telefono, mensaje } = req.body;
+  
+    // Configura el transporter de Nodemailer
+    const transporter = nodemailer.createTransport({
+      service: 'gmail', // Puedes usar otros servicios como Yahoo, Outlook, etc.
+      auth: {
+        user: 'tucorreo@gmail.com',
+        pass: 'tucontraseña',
+      },
+    });
+  
+    const mailOptions = {
+      from: correo,
+      to: 'andreafrancocontadora@gmail.com',
+      subject: 'Nuevo mensaje del formulario de contacto',
+      text: `Nombre: ${nombre}\nCorreo: ${correo}\nTeléfono: ${telefono}\nMensaje:\n${mensaje}`,
+    };
+  
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log(error);
+        res.status(500).send('Hubo un error al enviar el mensaje. Por favor, inténtelo de nuevo.');
+      } else {
+        console.log('Correo enviado: ' + info.response);
+        res.status(200).send('El mensaje se ha enviado correctamente.');
+      }
+    });
+  });
 
 
 function generateResponse(message) {
@@ -67,6 +97,29 @@ function generateResponse(message) {
 
 
 
+
+
+
+
+
+
+
+
+
+// Ruta para la página principal
+app.get('/contacto', (req, res) => {
+    res.render('servicios/contacto.hbs'); // Renderiza la vista 'home.hbs'
+});
+
+
+
+
+
+
+// Ruta para la página principal
+app.get('/informacion', (req, res) => {
+    res.render('servicios/informacion.hbs'); // Renderiza la vista 'home.hbs'
+});
 
 
 

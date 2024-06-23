@@ -1,20 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="utf-8">
-        <meta name="author" content="Javiera Craig">
-        <title>ASESORIA CONTABLE</title>
-        <meta name="description" content="Asociación para la promoción del uso sostenible de los recursos forestales">
-        <link rel="icon" type="image/png" sizes="32x32" href="">
-        <link rel="icon" type="image/png" size="16x16" href="imagenes/LOGO JENIFER.png">
-        <html lang="es-ES"></html>
-        <meta name="viewport" content="width=device-width">
-    </head>
-
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Servicios Contables</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
 <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap');
 
-<Style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #01284E;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #01284E;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #228B22;
+}
+
+p, ul {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.image-section {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #01284E;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i');
@@ -64,7 +164,7 @@ body {
 }
     header {
             background-color: white;
-            background-image: url('imagenes/luxa.org-opacity-changed-contador.jpg');
+            background-image: url('imagenes/aseosria.png');
             background-size: cover;
             background-attachment: fixed;
             padding: 0;
@@ -830,144 +930,8 @@ header, .nav-desktop, .dropdown-menu {
 }
 
 
-
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
-    }
-}
-.clients {
-    background: #fff; /* Cambia el color de fondo según tu diseño */
-    padding: 4rem 0;
-}
-
-.clients .container {
-    text-align: center;
-}
-
-.clients h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.client-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ajusta el número de columnas según tu diseño */
-    gap: 20px;
-}
-
-.client-item img {
-    max-width: 100%;
-    height: auto;
-}
-/* Asegúrate de que el contenedor de la imagen ocupe todo el ancho y no tenga padding ni margen */
-      .full-width-section {
-          
-            width: 100vw; /* Hace que el section ocupe todo el ancho de la pantalla */
-            padding: 0;   /* Elimina cualquier padding por defecto */
-            margin: 0;    /* Elimina cualquier margin por defecto */
-        }
-
-        .full-width-image {
-              position: relative;
-            right: 5%;
-            width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
-            height: auto; /* Mantiene la proporción de la imagen */
-            display: block; /* Elimina cualquier espacio en línea alrededor de la imagen */
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100vw; /* Asegura que el body y html ocupen todo el ancho de la pantalla */
-            overflow-x: hidden; /* Evita el desplazamiento horizontal */
-        }
-
-footer {
-    background-color: #01284E;
-    color: white;
-    padding: 40px 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-column {
-    flex: 1;
-    margin: 20px;
-    min-width: 250px;
-}
-
-.footer-column h4 {
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.footer-column p, .footer-column ul, .footer-column a {
-    font-size: 14px;
-    color: white;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li {
-    margin-bottom: 10px;
-}
-
-.footer-column ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-}
-
-.footer-column ul li a:hover {
-    color: #E58859;
-}
-
-.social-media {
-    display: flex;
-}
-
-.social-media a {
-    font-size: 20px;
-    margin-right: 10px;
-    color: white;
-    transition: color 0.3s;
-}
-
-.social-media a:hover {
-    color: #E58859;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    border-top: 1px solid #666;
-    padding-top: 20px;
-}
-
-.footer-bottom p {
-    margin: 0;
-}
-
-</Style>
-    <section id="correos">
+    </style>
+        <section id="correos">
         <div class="contacto-item">
             <img src="imagenes/gmail.png" alt="Correo">
             <h5 id="micorreo">andreafrancocontadora@gmail.com</h5>
@@ -1035,175 +999,51 @@ footer {
     </ul>
 </nav>
 
-<header>
-    <h4>Asesorías contables, tributarias y revisoria fiscal AF</h4>
-    <H6>Los buenos consejos garantizan mejores resultados</H6>
-    <button>CONOCE MAS DE NUESTRES SERVICIOS</button>
-    <div class="header-filter">
+    <header>
+        <div class="header-content">
+            <h1>Información de Servicios</h1>
+            <p>Asesorías contables, tributarias, propiedad horizontal y revisoría fiscal.</p>
+        </div>
+    </header>
+    <section class="container">
+        <div class="content">
+            <h2>Sobre Nosotros</h2>
+            <p>Contadora pública con alto grado de responsabilidad, proactividad, honestidad, comprometida con su trabajo, con espíritu de liderazgo, progreso y superación permanente. Gran facilidad y asimilación para brindar soluciones justas e inmediatas, enorme compromiso de entregar todo mi conocimiento y disposición al servicio y los objetivos en pro de la compañía.</p>
 
-    </div>
-</header>
+            <h3>Objetivo</h3>
+            <p>Prestar un servicio de asesoría y acompañamiento que le permita tanto a usted como a la empresa que lidera, buscar mecanismos de eficiencia y eficacia, confiabilidad en la información financiera y cumplimiento en las disposiciones normativas.</p>
 
+            <h3>Experiencia</h3>
+            <p>Durante mi experiencia laboral he tenido un alto grado de conocimiento en todos los ámbitos empresariales conociendo las necesidades del mismo. Soy una persona enfocada al logro con gran capacidad comercial, administrativa y siempre enfocada al éxito.</p>
 
+            <h3>Garantías</h3>
+            <p>Garantizar que los registros financieros de la compañía se ajusten a los requerimientos de las normas contables, tributarias y comerciales; propiciar que la información contable sea comprensible, útil, comparable, pertinente y oportuna.</p>
 
-<article class="container--redes">
-  <!--incio de el primer icono-->
-    <div class="icon">
-      <a class="icon-primary" href="#">f</a>	
+            <h3>Mantenimiento de la Contabilidad</h3>
+            <p>Mantenimiento de la contabilidad que incluye hacer, revisar y verificar todas las transacciones en el software proporcionado por parte de la compañía, cumpliendo con la normatividad de la ley, así como el aseguramiento eficiente de la información documental y digital.</p>
 
-      <div class="container-description">
-        <a class="icon-description" href="#">OBTENER INFORMACION</a>	
-      </div>
-    </div>
-
-  <!--incio segundo icono-->
-<div class="icon">
-    <a class="icon-primary color-gmail" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20m%C3%A1s%20informaci%C3%B3n">
-        W
-    </a>	
-    <div class="container-description">
-        <a class="icon-description color-gmail-text" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20m%C3%A1s%20informaci%C3%B3n">
-            OBTENER INFORMACIÓN
-        </a>	
-    </div>
-</div>
-
-
-<div class="icon">
-    <a class="icon-primary color-whatsapp" href="https://wa.me/573219724076?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
-        W
-    </a>	
-    <div class="container-description">
-        <a class="icon-description color-whatsapp-text" href="https://wa.me/573219724076?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
-            OBTENER INFORMACIÓN
-        </a>	
-    </div>
-</div>
-
-</article>
-
-
-
-
-
-    <section id="atencion" class="attention full-width-section">
-        <img src="imagenes/firma de correo electronico asesor de markeitng digital profesional azul marino (3) (3).png" alt="" class="full-width-image">
+            <h3>Objetivos Específicos</h3>
+            <ul>
+                <li>Velar que la información sea confiable y comprensible</li>
+                <li>Emitir las correspondientes certificaciones</li>
+                <li>Revisión de entradas y salidas tanto en bancos como en efectivo</li>
+                <li>Conciliación bancaria</li>
+                <li>Conciliación de cartera</li>
+                <li>Conciliación de proveedores</li>
+                <li>Realizar la correcta causación para pago de impuestos</li>
+                <li>Elaboración de planillas (seguridad social) como lo exige la norma</li>
+                <li>Presentación de todas las declaraciones tributarias pertinentes</li>
+                <li>Balances e informes anuales (o cuando lo requiere la empresa)</li>
+            </ul>
+        </div>
+        <div class="image-section">
+            <img src="/path/to/your/image.jpg" alt="Contabilidad">
+        </div>
     </section>
-
-<section class="cuadro-color">
-    <h5>RECUERDA TODOS NUESTROS SERVICIOS SON 100% VIRTUALES </h5>
-</section>
-
-
-
-
-
-
-
-<section class="featured">
-    <div class="title-container">
-         <h4>SERVICIOS PRINCIPALES</h4>
-    </div>
-     
-    <div class="card-container">
-        <a href="">
-            <div class="card card-inv">
-                <div class="card-summary">
-                    <h4>ESTADOS FINACIEROS</h4>
-                <p>Proceso integral para la elaboración y presentación de los estados financieros, proporcionando una visión clara y precisa de la situación económica y financiera de la empresa.</p>
-                </div>
-            </div>
-        </a> 
-
-        <a href="educacion-ambiental.html">
-            <div class="card card-edu">
-                <div class="card-summary">
-                <h4>REGISTRO Y ACTUALIZACIÓN DEL RUT, RUB</h4>
-                <p>Servicio dedicado al registro y actualización del RUT y RUB, asegurando el cumplimiento de las normativas y manteniendo la información empresarial al día para facilitar trámites fiscales y comerciales.</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="asesoria-tecnica">
-            <div class="card card-ases">
-                <div class="card-summary">
-                <h4>FACTURACIÓN ELECTRÓNICA</h4>
-                    <p>Plan Técnico de Gestión Forestal Sostenible de los montes del Ayuntamiento de Erandio.</p>
-                </div>
-            </div>
-        </a>
-    </div>    
-</section>
-
-  
-<section id="clientes" class="clients">
-    <div class="container">
-        <h2>Nuestros Clientes</h2>
-        <div class="client-grid">
-            <div class="client-item">
-                <img src="imagenes/cliente1.png" alt="Cliente 1">
-            </div>
-            <div class="client-item">
-                <img src="imagenes/cliente2.png" alt="Cliente 2">
-            </div>
-            <div class="client-item">
-                <img src="imagenes/cliente3.png" alt="Cliente 3">
-            </div>
-            <!-- Agrega más clientes aquí -->
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-   <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h4>Contacto</h4>
-                <p><i class="fas fa-envelope"></i> andreafrancocontadora@gmail.com</p>
-                <p><i class="fas fa-phone-alt"></i> 3223958005</p>
-                <p><i class="fab fa-whatsapp"></i> +57 3223958005</p>
-            </div>
-            <div class="footer-column">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="/principal">Inicio</a></li>
-                    <li><a href="/servicios">Servicios</a></li>
-                    <li><a href="/informacion">Información</a></li>
-                    <li><a href="/contacto">Contáctenos</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Síguenos</h4>
-                <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Asesor Contable. Todos los derechos reservados.</p>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Servicios Contables. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/scripts.js" defer></script>
-
 </body>
-<script src="errotuz.js">   
-</script>
-<Script>
-    const hamburgerMenu = document.querySelector('.hamburger');
-const dropdownMenu = document.querySelector('.dropdown-menu');
-
-hamburgerMenu.addEventListener('mousedown', function(){
-    dropdownMenu.classList.toggle('visible');
-})
-</Script>
 </html>
