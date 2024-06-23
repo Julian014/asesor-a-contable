@@ -6,10 +6,12 @@
         <meta name="author" content="Javiera Craig">
         <title>ASESORIA CONTABLE</title>
         <meta name="description" content="Asociación para la promoción del uso sostenible de los recursos forestales">
-        <link rel="icon" type="image/png" sizes="32x32" href="">
-        <link rel="icon" type="image/png" size="16x16" href="imagenes/LOGO JENIFER.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/contabilidad.png">
         <html lang="es-ES"></html>
         <meta name="viewport" content="width=device-width">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
 
 <body>
@@ -527,8 +529,8 @@ p.small {
 
 
 #LOGO{
-width: 200px;
-height: 100px;
+width: 60%;
+height: 70%;
 
 }
 
@@ -788,7 +790,7 @@ height: 100px;
         }
      #correos {
             height: 40px; /* Ajusta la altura según sea necesario */
-            background-color: #F4E1D2      ;
+            background-color: white      ;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -966,7 +968,143 @@ footer {
     margin: 0;
 }
 
+   .publicidad {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-image: url('imagenes/luxa.org-opacity-changed-sancion-extemporaneidad-1 (1).png'); /* Ruta de tu imagen de fondo */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px; /* Aumenta el padding para separar del borde */
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    /* Estilos para el contenedor principal */
+.contenido {
+    flex: 1;
+    padding-left: 30px;
+    color: black; /* Color de texto negro */
+    font-weight: bold; /* Texto en negrita */
+}
+
+    .contenido h4 {
+        color: #01284e;
+        font-size: 30px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    .contenido p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .contenido ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .contenido li {
+        font-size: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 20px;
+    }
+
+    .contenido li:before {
+        content: "\2022";
+        position: absolute;
+        left: 0;
+        color: #4CAF50;
+    }
+
+    .boton-solicitar {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+    }
+
+    .boton-solicitar:hover {
+        background-color: #45a049;
+    }
+
+    /* Estilos para el contenedor de la imagen */
+    .imagen-container {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 30px;
+    }
+
+    .imagen-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .imagen-container:hover img {
+        transform: scale(1.1);
+    }
+
+    .texto-bajo-imagen {
+        margin-top: 15px;
+    }
+
+    .texto-bajo-imagen h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .texto-bajo-imagen p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    *{
+
+  font-family: "Rubik", sans-serif;
+
+    }
+        #splash-screen {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999; /* Asegura que esté al frente */
+    }
+    #splash-screen img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* Estilos para el contenido principal (tu página) */
+    #main-content {
+      display: none; /* Oculta el contenido principal inicialmente */
+    }
+</style>
+
 </Style>
+  <div id="splash-screen">
+    <img src="imagenes/LOGO JENIFER.jpg" alt="Pantalla de Bienvenida">
+  </div>
+
     <section id="correos">
         <div class="contacto-item">
             <img src="imagenes/gmail.png" alt="Correo">
@@ -1035,10 +1173,28 @@ footer {
     </ul>
 </nav>
 
+<section class="publicidad">
+    <div class="imagen-container">
+        <img src="imagenes/IAA.jpg" alt="Imagen ilustrativa">
+    </div>
+    <div class="contenido">
+        <h4>¿Necesitas ayuda para declarar renta como persona natural?</h4>
+        <p>Te acompañamos en el cumplimiento de tus obligaciones tributarias para que puedas declarar tu renta de manera sencilla y efectiva.</p>
+        <ul>
+            <li>Patrimonio bruto superior a $190.854.000 al finalizar 2023.</li>
+            <li>Ingresos superiores a $59.376.800 (promedio mensual de $4.900.000).</li>
+            <li>Consumos a través de tarjeta de crédito mayores a $59.376.800 en 2023.</li>
+            <li>Total de compras y consumos en 2023 superiores a $59.376.800.</li>
+            <li>Acumulado en consignaciones, depósitos o inversiones financieras superior a $59.376.800.</li>
+        </ul>
+        <button class="boton-solicitar">Solicitar Asesoría</button>
+    </div>
+</section>
 <header>
-    <h4>Asesorías contables, tributarias y revisoria fiscal AF</h4>
+  
+    <h4>Asesorías contables, tributarias  revisoria fiscal AF</h4>
     <H6>Los buenos consejos garantizan mejores resultados</H6>
-    <button>CONOCE MAS DE NUESTRES SERVICIOS</button>
+    <button>CONOCE MAS DE NUESTROS SERVICIOS</button>
     <div class="header-filter">
 
     </div>
@@ -1087,11 +1243,11 @@ footer {
 
 
     <section id="atencion" class="attention full-width-section">
-        <img src="imagenes/firma de correo electronico asesor de markeitng digital profesional azul marino (3) (3).png" alt="" class="full-width-image">
+        <img src="imagenes/pixelcut-export.jpeg" alt="" class="full-width-image">
     </section>
 
 <section class="cuadro-color">
-    <h5>RECUERDA TODOS NUESTROS SERVICIOS SON 100% VIRTUALES </h5>
+    <h5>CONTAMOS CON SERVICIOS DE FORMA DE REMOTA Y PRECENCIAL PARA GARANTIZAR TUS METAS DE LA MEJOR MANERA</h5>
 </section>
 
 
@@ -1106,7 +1262,7 @@ footer {
     </div>
      
     <div class="card-container">
-        <a href="">
+          <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Elaboración%20de%20Estados%20Financieros" target="_blank">
             <div class="card card-inv">
                 <div class="card-summary">
                     <h4>ESTADOS FINACIEROS</h4>
@@ -1115,24 +1271,28 @@ footer {
             </div>
         </a> 
 
-        <a href="educacion-ambiental.html">
+          <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Registro%20y%20Actualización%20del%20RUT" target="_blank">
             <div class="card card-edu">
                 <div class="card-summary">
-                <h4>REGISTRO Y ACTUALIZACIÓN DEL RUT, RUB</h4>
-                <p>Servicio dedicado al registro y actualización del RUT y RUB, asegurando el cumplimiento de las normativas y manteniendo la información empresarial al día para facilitar trámites fiscales y comerciales.</p>
+                <h4>REGISTRO Y ACTUALIZACIÓN DEL RUT,RUB  Y CAMARA DE COMERCIO</h4>
+                <p>Servicio dedicado al registro y actualización de rut, rub y camara de comercio asegurando el cumplimiento de las normativas y manteniendo la información empresarial al día para facilitar trámites fiscales y comerciales.</p>
                 </div>
             </div>
         </a>
 
-        <a href="asesoria-tecnica">
+ 
+
+          <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Facturación%20Electrónica" target="_blank">
             <div class="card card-ases">
                 <div class="card-summary">
                 <h4>FACTURACIÓN ELECTRÓNICA</h4>
-                    <p>Plan Técnico de Gestión Forestal Sostenible de los montes del Ayuntamiento de Erandio.</p>
+            <p>Implementación y gestión de sistemas de facturación electrónica conforme a las normativas vigentes. Optimiza tu proceso de facturación y asegura la precisión y legalidad de tus documentos electrónicos.</p>
                 </div>
             </div>
         </a>
     </div>    
+
+    
 </section>
 
   
@@ -1142,6 +1302,9 @@ footer {
         <div class="client-grid">
             <div class="client-item">
                 <img src="imagenes/cliente1.png" alt="Cliente 1">
+            </div>
+             <div class="client-item">
+                <img src="imagenes/PROPIEDADH-removebg-preview.png" alt="Cliente 1">
             </div>
             <div class="client-item">
                 <img src="imagenes/cliente2.png" alt="Cliente 2">
@@ -1206,4 +1369,11 @@ hamburgerMenu.addEventListener('mousedown', function(){
     dropdownMenu.classList.toggle('visible');
 })
 </Script>
+ <script>
+    // Oculta la pantalla de bienvenida después de 3 segundos y muestra el contenido principal
+    setTimeout(function() {
+      document.getElementById('splash-screen').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }, 2000); // 2000 ms = 2 segundos
+  </script>
 </html>

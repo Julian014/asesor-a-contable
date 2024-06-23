@@ -63,8 +63,8 @@ app.post('/enviar', (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail', // Puedes usar otros servicios como Yahoo, Outlook, etc.
       auth: {
-        user: 'tucorreo@gmail.com',
-        pass: 'tucontraseña',
+        user: 'andreafrancocontadora@gmail.com',
+        pass: 'gnpkqjpgbbnsbmnd',
       },
     });
   
