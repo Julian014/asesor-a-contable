@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
 
 <body>
 
@@ -64,68 +65,10 @@ body {
     width: auto;
     height: auto;
 }
-    header {
-            background-color: white;
-            background-image: url('imagenes/luxa.org-opacity-changed-contador.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            padding: 0;
-            width: 100%;
-            min-height: 25vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .header-content {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.4);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 80%;
-            max-width: 800px;
-            position: relative;
-            z-index: 1;
-            text-align: center;
-        }
-
-        header h4 {
-            position: relative;
-            color: white;
-            font-weight: lighter;
-            font-size: 2.7vw;
-            margin: 0;
-            left: 5%;
-        }
-
-  header h6 {
-        color: white;
-        font-weight: lighter;
-        font-size: 1.5vw;
-        margin: 20px 0 0 0; /* Añadir margen superior para separar del h4 */
-        position: relative;
-        right: 0; /* Centramos de nuevo quitando el desplazamiento */
-    }
-        header button {
-            background-color: #228B22;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2vw;
-            cursor: pointer;
-            margin-top: 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        header button:hover {
-            background-color: #34a075;
-        }
+    
 
 .nav-desktop {
-    background-color: #01284E;
+    background-color: #3366cc;
     padding: 10px;
     width: 100%;
     min-height: 48px;
@@ -356,11 +299,14 @@ section.featured::before {
     width: 100%;
     height: 100%;
     z-index: -1; /* Asegura que esté detrás del contenido */
-    background: linear-gradient(to bottom right, #01284e 50%, transparent 50%);
+    background: linear-gradient(to bottom right, #ffffff     50%, transparent 50%);
 }
 
 
+body{
 
+    background-color: #3366cc;
+}
 
 
 .card-container {
@@ -378,7 +324,7 @@ section.featured::before {
 
 .title-container {
     color: white;
-        background-color: rgb(1, 40, 78,0.7); /* Fondo oscuro para contraste */
+        background-color:   rgb(1, 40, 78,0.9); /* Fondo oscuro para contraste */
 
     margin: 64px auto; /* Centramos el contenedor horizontalmente */
     padding: 20px; /* Añadimos espacio alrededor del contenido */
@@ -397,12 +343,13 @@ section.featured::before {
 .title-container h3 {
     margin: 0 auto 0 0;
     display: inline-flex;
-    color: #333;
+    color: #01284e;
 }
 
 .card {
+    
    /* margin: 20px;*/
-    background-color: honeydew;
+    background-color: black;
     border-radius: 4px;
     display: flex;
     flex-direction: column-reverse;
@@ -440,18 +387,17 @@ section.featured::before {
 }
 
 .card-summary {
-    background-color: rgba(255,255,255,1);
+    background-color: white;
     padding: 0px 10px 5px 10px;
     /* filter: grayscale(100%);*/
     /*fill-opacity: 50%;*/
-    mix-blend-mode: hard-light;
+    
     width: 100%;
     height: auto;
     position: relative;
     text-overflow: ellipsis;
     transform: translate(0,94px);
     line-height: 24px;
-    transition: 0.3s;
     transition-timing-function: ease;
     display: inline-block;
 }
@@ -500,7 +446,7 @@ p.small {
 .cta-text {
     font-size: 1rem;
     font-weight: 500;
-    color: #fff;
+    color: black;
     letter-spacing: 0.6px;
 }
 
@@ -701,8 +647,8 @@ height: 70%;
         .attention {
             position: relative;
             left: 5%;
-            background: white;
-            padding: 4rem 0;
+            background-color: #4682b4;   
+         padding: 4rem 0;
         }
 
         .attention .container {
@@ -892,7 +838,7 @@ header, .nav-desktop, .dropdown-menu {
         }
 
 footer {
-    background-color: #01284E;
+    background-color: #3366cc;
     color: white;
     padding: 40px 0;
 }
@@ -968,28 +914,8 @@ footer {
     margin: 0;
 }
 
-   .publicidad {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-image: url('imagenes/luxa.org-opacity-changed-sancion-extemporaneidad-1 (1).png'); /* Ruta de tu imagen de fondo */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 50px; /* Aumenta el padding para separar del borde */
-        border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
-        overflow: hidden;
-    }
 
-    /* Estilos para el contenedor principal */
-.contenido {
-    flex: 1;
-    padding-left: 30px;
-    color: black; /* Color de texto negro */
-    font-weight: bold; /* Texto en negrita */
-}
+
 
     .contenido h4 {
         color: #01284e;
@@ -1098,6 +1024,241 @@ footer {
     #main-content {
       display: none; /* Oculta el contenido principal inicialmente */
     }
+
+
+
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex; /* Mostrar slides en línea horizontalmente */
+  transition: transform 0.5s ease; /* Transición suave para el desplazamiento */
+}
+
+.carousel-slide {
+  flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho */
+  display: flex;
+  align-items: center; /* Centrar verticalmente los contenidos */
+  background-color: #f0f0f0; /* Color de fondo para los slides */
+}
+
+.slide-content {
+  flex: 1;
+  text-align: right; /* Alinear el texto a la derecha */
+}
+
+.slide-content h2 {
+  font-weight: bold; /* Texto del título en negrita */
+}
+
+.slide-content p {
+  font-weight: bold; /* Texto del párrafo en negrita */
+}
+
+.slide-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.slide-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Altura máxima para la imagen */
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 1000; /* Asegura que estén encima de todo */
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos específicos para la sección 'atencion' */
+
+/* Estilos específicos para la sección 'atencion' */
+#atencion {
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  padding: 60px 20px; /* Aumenta el espacio alrededor del contenido */
+}
+
+.container {
+  max-width: 1200px; /* Ancho máximo del contenido aumentado */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.text h2 {
+  margin-top: 0;
+  font-size: 2.5rem; /* Aumenta el tamaño del título */
+  color: #333;
+}
+
+ul {
+  padding: 0;
+  margin-top: 0;
+  list-style-type: none;
+  font-size: 1.2rem; /* Aumenta el tamaño del texto de la lista */
+}
+
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  max-width: 300px; /* Aumenta el tamaño máximo de la imagen */
+  height: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta el tamaño y suavidad de la sombra */
+}
+    .section.attention {
+      background-color: #ffffff; /* Color de fondo de la sección */
+      padding: 40px 0; /* Espaciado interno */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ligera */
+    }
+    .section.attention .container {
+      max-width: 100%; /* Ancho máximo */
+    }
+    .card {
+      border: none; /* Sin borde en la tarjeta */
+      border-radius: 10px; /* Bordes redondeados */
+      overflow: hidden; /* Ocultar desbordamientos */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ligera */
+    }
+    .card img {
+      width: 100%; /* Imagen al 100% del contenedor */
+      height: auto; /* Altura automática */
+      border-top-left-radius: 10px; /* Bordes redondeados superiores */
+      border-top-right-radius: 10px;
+    }
+    .card-body {
+      background-color: #f9f9f9; /* Color de fondo del cuerpo de la tarjeta */
+      text-align: center; /* Alineación centrada del texto */
+    }
+    .card-title {
+      color: #333; /* Color del título */
+      margin-bottom: 0; /* Sin margen inferior */
+    }
+    .card-text {
+      color: #666; /* Color del texto */
+    }
+    .services {
+      background-color: #ffffff; /* Color de fondo del área de servicios */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ligera */
+      padding: 20px; /* Espaciado interno */
+    }
+    .services h3 {
+      color: #333; /* Color del título */
+      text-align: center; /* Alineación centrada del texto */
+    }
+    .services ul {
+      list-style-type: none; /* Sin viñetas */
+      padding: 0; /* Sin relleno */
+      margin: 0; /* Sin margen */
+      text-align: left; /* Alineación izquierda */
+    }
+    .services li {
+      color: #666; /* Color del texto */
+      margin-bottom: 8px; /* Margen inferior */
+       .carousel-item {
+      height: 100vh; /* Altura del carousel al 100% del viewport */
+      background-size: cover; /* Tamaño de la imagen de fondo */
+      background-position: center; /* Posición centrada de la imagen de fondo */
+    }
+    .carousel-slide {
+      position: relative;
+      text-align: center;
+      color: white; /* Color del texto */
+      padding-top: 25%; /* Espaciado superior */
+    }
+    .carousel-slide h2 {
+      font-size: 3rem; /* Tamaño del título */
+    }
+    .carousel-slide p {
+      font-size: 1.5rem; /* Tamaño del texto */
+    }
+    }
+    .carousel-slide.slide1 {
+  background-color: #fffacd; /* Color de fondo para el slide 1 */
+}
+
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Color de texto para asegurar legibilidad */
+}
+
+.carousel-slide.slide1 {
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el fondo */
+  background-position: center; /* Centra la imagen de fondo */
+}
+
+.carousel-slide.slide2 {
+  background-color: #f0f0f0; /* Color de fondo para el slide 2 */
+}
+
+.slide-content {
+  display: none; /* Oculta el contenido textual si no es necesario mostrarlo */
+}
+
+.carousel-slide.slide2 .slide-image img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Asegura que la imagen sea bloque y se pueda centrar */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+#tarjetap{
+
+position: relative;
+left: -50%;
+
+}
+
 </style>
 
 </Style>
@@ -1173,33 +1334,33 @@ footer {
     </ul>
 </nav>
 
-<section class="publicidad">
-    <div class="imagen-container">
-        <img src="imagenes/IAA.jpg" alt="Imagen ilustrativa">
-    </div>
-    <div class="contenido">
-        <h4>¿Necesitas ayuda para declarar renta como persona natural?</h4>
-        <p>Te acompañamos en el cumplimiento de tus obligaciones tributarias para que puedas declarar tu renta de manera sencilla y efectiva.</p>
-        <ul>
-            <li>Patrimonio bruto superior a $190.854.000 al finalizar 2023.</li>
-            <li>Ingresos superiores a $59.376.800 (promedio mensual de $4.900.000).</li>
-            <li>Consumos a través de tarjeta de crédito mayores a $59.376.800 en 2023.</li>
-            <li>Total de compras y consumos en 2023 superiores a $59.376.800.</li>
-            <li>Acumulado en consignaciones, depósitos o inversiones financieras superior a $59.376.800.</li>
-        </ul>
-        <button class="boton-solicitar">Solicitar Asesoría</button>
-    </div>
-</section>
-<header>
+<div class="carousel-container">
+  <button class="carousel-prev">‹</button>
   
-    <h4>Asesorías contables, tributarias  revisoria fiscal AF</h4>
-    <H6>Los buenos consejos garantizan mejores resultados</H6>
-    <button>CONOCE MAS DE NUESTROS SERVICIOS</button>
-    <div class="header-filter">
 
+
+
+<div class="carousel-inner">
+  <div class="carousel-slide slide1">
+    <div class="slide-content">
+      <h2>Asesorías contables, tributarias revisoria fiscal AF</h2>
+      <p>Los buenos consejos garantizan mejores resultados</p>
     </div>
-</header>
-
+    <div class="slide-image">
+      <img src="imagenes/fotofondo1.jpg" alt="Slide 1">
+    </div>
+  </div>
+  <div class="carousel-slide slide2">
+    <div class="slide-content">
+      <!-- Contenido opcional si deseas mantenerlo visible -->
+    </div>
+    <div class="slide-image">
+      <img id="tarjetaa" src="imagenes/firma de correo electronico asesor de markeitng digital profesional azul marino (1).png" alt="Slide 2">
+    </div>
+  </div>
+  <!-- Agrega más slides según sea necesario -->
+</div>
+<button class="carousel-next">›</button>
 
 
 <article class="container--redes">
@@ -1242,13 +1403,15 @@ footer {
 
 
 
-    <section id="atencion" class="attention full-width-section">
-        <img src="imagenes/pixelcut-export.jpeg" alt="" class="full-width-image">
-    </section>
 
-<section class="cuadro-color">
-    <h5>CONTAMOS CON SERVICIOS DE FORMA DE REMOTA Y PRECENCIAL PARA GARANTIZAR TUS METAS DE LA MEJOR MANERA</h5>
-</section>
+
+
+
+
+
+
+
+
 
 
 
@@ -1295,7 +1458,25 @@ footer {
     
 </section>
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="clientes" class="clients">
     <div class="container">
         <h2>Nuestros Clientes</h2>
@@ -1303,24 +1484,17 @@ footer {
             <div class="client-item">
                 <img src="imagenes/cliente1.png" alt="Cliente 1">
             </div>
-             <div class="client-item">
-                <img src="imagenes/PROPIEDADH-removebg-preview.png" alt="Cliente 1">
+         
+            <div class="client-item">
+                <img src="imagenes/cliente2.jpg" alt="Cliente 2">
             </div>
             <div class="client-item">
-                <img src="imagenes/cliente2.png" alt="Cliente 2">
-            </div>
-            <div class="client-item">
-                <img src="imagenes/cliente3.png" alt="Cliente 3">
+                <img src="imagenes/cliente3.jpg" alt="Cliente 3">
             </div>
             <!-- Agrega más clientes aquí -->
         </div>
     </div>
 </section>
-
-
-
-
-
 
 
 
@@ -1344,10 +1518,7 @@ footer {
             <div class="footer-column">
                 <h4>Síguenos</h4>
                 <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+      <img  id="tarjetap" src="imagenes/firma de correo electronico asesor de markeitng digital profesional azul marino (1).png" alt="Slide 2">
                 </div>
             </div>
         </div>
@@ -1376,4 +1547,58 @@ hamburgerMenu.addEventListener('mousedown', function(){
       document.getElementById('main-content').style.display = 'block';
     }, 2000); // 2000 ms = 2 segundos
   </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prevBtn = document.querySelector('.carousel-prev');
+  const nextBtn = document.querySelector('.carousel-next');
+  const carouselInner = document.querySelector('.carousel-inner');
+  
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+  
+  // Mostrar el primer slide al cargar
+  slides[currentIndex].classList.add('active');
+  
+  function showSlide(index) {
+    carouselInner.style.transform = `translateX(-${index * 100}%)`; // Mover el carrusel horizontalmente
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+  }
+  
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+  
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+  }
+  
+  // Evento para el botón de siguiente slide
+  nextBtn.addEventListener('click', function() {
+    nextSlide();
+  });
+  
+  // Evento para el botón de slide anterior
+  prevBtn.addEventListener('click', function() {
+    prevSlide();
+  });
+  
+  // Automáticamente cambiar de slide cada 5 segundos
+  setInterval(nextSlide, 5000); // Cambia cada 5 segundos (5000 milisegundos)
+});
+
+
+</script>
+
+
+
 </html>
