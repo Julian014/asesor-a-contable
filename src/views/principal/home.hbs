@@ -481,16 +481,13 @@ height: 70%;
 }
 
 
-        .container--redes{
-  width:400px;
-  left:0;
-  position:fixed;
-  top:25%;
-    z-index: 9999; /* Valor alto para asegurar que esté por encima de todo */
-
-  }
-
-
+.container--redes {
+  width: 400px;
+  left: 0;
+  position: fixed;
+  top: 25%;
+  z-index: 1; /* Reducimos el z-index para asegurar que esté detrás del carusel */
+}
 
 .icon{
   top:50%;
@@ -1005,21 +1002,7 @@ footer {
   font-family: "Rubik", sans-serif;
 
     }
-        #splash-screen {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999; /* Asegura que esté al frente */
-    }
-    #splash-screen img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
+    
     /* Estilos para el contenido principal (tu página) */
     #main-content {
       display: none; /* Oculta el contenido principal inicialmente */
@@ -1029,6 +1012,8 @@ footer {
 
 
 .carousel-container {
+        z-index: 9999; /* Valor alto para asegurar que esté por encima de todo */
+
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -1198,73 +1183,167 @@ ul {
       margin: 0; /* Sin margen */
       text-align: left; /* Alineación izquierda */
     }
-    .services li {
-      color: #666; /* Color del texto */
-      margin-bottom: 8px; /* Margen inferior */
-       .carousel-item {
-      height: 100vh; /* Altura del carousel al 100% del viewport */
-      background-size: cover; /* Tamaño de la imagen de fondo */
-      background-position: center; /* Posición centrada de la imagen de fondo */
-    }
-    .carousel-slide {
-      position: relative;
-      text-align: center;
-      color: white; /* Color del texto */
-      padding-top: 25%; /* Espaciado superior */
-    }
-    .carousel-slide h2 {
-      font-size: 3rem; /* Tamaño del título */
-    }
-    .carousel-slide p {
-      font-size: 1.5rem; /* Tamaño del texto */
-    }
-    }
-    .carousel-slide.slide1 {
-  background-color: #fffacd; /* Color de fondo para el slide 1 */
+
+
+
+
+
+
+.carousel-container {
+  position: relative; /* Añadido para que funcione el z-index */
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 300px; /* Altura fija para el carrusel */
+  z-index: 2; /* Carrusel por encima */
+}
+
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%; /* Asegura que el contenedor interno ocupe toda la altura del contenedor del carrusel */
 }
 
 .carousel-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 100%; /* Asegura que cada slide ocupe toda la altura del contenedor del carrusel */
+  display: flex; /* Asegura que el contenido del slide se ajuste */
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin recortarse */
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+#renta{
+width: 120%;
+
+
+}
+#mifo{
+    width: 160%;
+
+
+
+}
+
+/* Colores de fondo para cada slide */
+.slide1 {
+  background-color: #ffdddd; /* Color de fondo para el primer slide */
+}
+
+.slide2 {
+  background-color: #ddffdd; /* Color de fondo para el segundo slide */
+}
+
+.slide3 {
+  background-color: #ddddff; /* Color de fondo para el tercer slide */
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+.carousel-container {
   position: relative;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 300px; /* Altura fija para el carrusel */
+  z-index: 2; /* Carrusel por encima */
+}
+
+.carousel-inner {
   display: flex;
-  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%; /* Asegura que el contenedor interno ocupe toda la altura del contenedor del carrusel */
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 100%; /* Asegura que cada slide ocupe toda la altura del contenedor del carrusel */
+  display: flex; /* Asegura que el contenido del slide se ajuste */
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  position: relative; /* Añadido para posicionar los indicadores relativamente */
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin recortarse */
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición vertical según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
   justify-content: center;
-  color: white; /* Color de texto para asegurar legibilidad */
+  align-items: center;
+  z-index: 3; /* Indicadores por encima del carrusel */
 }
 
-.carousel-slide.slide1 {
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el fondo */
-  background-position: center; /* Centra la imagen de fondo */
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-.carousel-slide.slide2 {
-  background-color: #f0f0f0; /* Color de fondo para el slide 2 */
-}
-
-.slide-content {
-  display: none; /* Oculta el contenido textual si no es necesario mostrarlo */
-}
-
-.carousel-slide.slide2 .slide-image img {
-  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Asegura que la imagen sea bloque y se pueda centrar */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-}
-
-#tarjetap{
-
-position: relative;
-left: -50%;
-
+/* Estilos para el indicador activo */
+.indicator.active {
+  background-color: red; /* Color de fondo cuando el indicador está activo */
 }
 
 </style>
 
 </Style>
-  <div id="splash-screen">
-    <img src="imagenes/LOGO JENIFER.jpg" alt="Pantalla de Bienvenida">
-  </div>
 
     <section id="correos">
         <div class="contacto-item">
@@ -1334,33 +1413,43 @@ left: -50%;
     </ul>
 </nav>
 
+
 <div class="carousel-container">
   <button class="carousel-prev">‹</button>
-  
-
-
-
-<div class="carousel-inner">
-  <div class="carousel-slide slide1">
-    <div class="slide-content">
-      <h2>Asesorías contables, tributarias revisoria fiscal AF</h2>
-      <p>Los buenos consejos garantizan mejores resultados</p>
+  <div class="carousel-inner">
+    <div class="carousel-slide slide1">
+      <img  id="renta" src="imagenes/RENTA.png" alt="Slide 1">
     </div>
-    <div class="slide-image">
-      <img src="imagenes/fotofondo1.jpg" alt="Slide 1">
+    <div class="carousel-slide slide2">
+      <img src="imagenes/renta2.jpg" alt="Slide 2">
     </div>
+    <div class="carousel-slide slide3">
+      <img src="imagenes/fimarhenider.png" alt="Slide 3">
+    </div>
+    <!-- Agrega más slides según sea necesario -->
   </div>
-  <div class="carousel-slide slide2">
-    <div class="slide-content">
-      <!-- Contenido opcional si deseas mantenerlo visible -->
-    </div>
-    <div class="slide-image">
-      <img id="tarjetaa" src="imagenes/firma de correo electronico asesor de markeitng digital profesional azul marino (1).png" alt="Slide 2">
-    </div>
+  <div class="carousel-indicators">
+    <div class="indicator"></div>
+    <div class="indicator"></div>
+    <div class="indicator"></div>
+    <!-- Añade más indicadores según el número de slides -->
   </div>
-  <!-- Agrega más slides según sea necesario -->
+  <button class="carousel-next">›</button>
 </div>
-<button class="carousel-next">›</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <article class="container--redes">
@@ -1518,7 +1607,6 @@ left: -50%;
             <div class="footer-column">
                 <h4>Síguenos</h4>
                 <div class="social-media">
-      <img  id="tarjetap" src="imagenes/firma de correo electronico asesor de markeitng digital profesional azul marino (1).png" alt="Slide 2">
                 </div>
             </div>
         </div>
@@ -1540,13 +1628,7 @@ hamburgerMenu.addEventListener('mousedown', function(){
     dropdownMenu.classList.toggle('visible');
 })
 </Script>
- <script>
-    // Oculta la pantalla de bienvenida después de 3 segundos y muestra el contenido principal
-    setTimeout(function() {
-      document.getElementById('splash-screen').style.display = 'none';
-      document.getElementById('main-content').style.display = 'block';
-    }, 2000); // 2000 ms = 2 segundos
-  </script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -1596,6 +1678,75 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(nextSlide, 5000); // Cambia cada 5 segundos (5000 milisegundos)
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const indicators = document.querySelectorAll('.indicator');
+  const slides = document.querySelectorAll('.carousel-slide');
+
+  // Función para actualizar los indicadores según el slide actual
+  function updateIndicators(currentSlide) {
+    indicators.forEach((indicator, index) => {
+      if (index === currentSlide) {
+        indicator.classList.add('active');
+      } else {
+        indicator.classList.remove('active');
+      }
+    });
+  }
+
+  // Función para manejar la navegación del carrusel
+  function navigateCarousel(direction) {
+    const currentSlide = getCurrentSlideIndex();
+    let nextSlide;
+
+    if (direction === 'next') {
+      nextSlide = (currentSlide + 1) % slides.length;
+    } else if (direction === 'prev') {
+      nextSlide = (currentSlide - 1 + slides.length) % slides.length;
+    }
+
+    updateCarousel(nextSlide);
+  }
+
+  // Función para obtener el índice del slide actual
+  function getCurrentSlideIndex() {
+    let currentSlideIndex = 0;
+    slides.forEach((slide, index) => {
+      if (slide.classList.contains('active-slide')) {
+        currentSlideIndex = index;
+      }
+    });
+    return currentSlideIndex;
+  }
+
+  // Event listeners para los botones de navegación
+  document.querySelector('.carousel-prev').addEventListener('click', () => {
+    navigateCarousel('prev');
+  });
+
+  document.querySelector('.carousel-next').addEventListener('click', () => {
+    navigateCarousel('next');
+  });
+
+  // Event listeners para los indicadores
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+      updateCarousel(index);
+    });
+  });
+
+  // Función para actualizar el carrusel
+  function updateCarousel(index) {
+    slides.forEach((slide, slideIndex) => {
+      if (slideIndex === index) {
+        slide.classList.add('active-slide');
+      } else {
+        slide.classList.remove('active-slide');
+      }
+    });
+
+    updateIndicators(index);
+  }
+});
 
 </script>
 
