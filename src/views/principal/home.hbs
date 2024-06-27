@@ -1208,7 +1208,7 @@ ul {
 
 .carousel-slide {
   flex: 0 0 100%;
-  max-width: 100%;
+ 
   box-sizing: border-box;
   height: 100%; /* Asegura que cada slide ocupe toda la altura del contenedor del carrusel */
   display: flex; /* Asegura que el contenido del slide se ajuste */
@@ -1254,15 +1254,15 @@ width: 120%;
 
 /* Colores de fondo para cada slide */
 .slide1 {
-  background-color: #ffdddd; /* Color de fondo para el primer slide */
+  background-color: #E6E6FA; /* Color de fondo para el primer slide */
 }
 
 .slide2 {
-  background-color: #ddffdd; /* Color de fondo para el segundo slide */
+  background-color: #B2EBF2; /* Color de fondo para el segundo slide */
 }
 
 .slide3 {
-  background-color: #ddddff; /* Color de fondo para el tercer slide */
+  background-color: #F8BBD0; /* Color de fondo para el tercer slide */
 }
 
 .carousel-prev, .carousel-next {
@@ -1301,7 +1301,7 @@ width: 120%;
 
 .carousel-slide {
   flex: 0 0 100%;
-  max-width: 100%;
+
   box-sizing: border-box;
   height: 100%; /* Asegura que cada slide ocupe toda la altura del contenedor del carrusel */
   display: flex; /* Asegura que el contenido del slide se ajuste */
@@ -1311,8 +1311,7 @@ width: 120%;
 }
 
 .carousel-slide img {
-  max-width: 100%;
-  max-height: 100%;
+
   object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin recortarse */
 }
 
@@ -1354,8 +1353,10 @@ width: 120%;
 }
 
 .slide-text {
-  max-width: 50%; /* Ajusta el ancho del texto según sea necesario */
-  padding: 0 20px; /* Añade espacio alrededor del texto */
+  position: relative;
+  left: 10%;
+  max-width: 40%; /* Ajusta el ancho del texto según sea necesario */
+  padding: 0 5px; /* Añade espacio alrededor del texto */
 }
 
 .carousel-slide.slide4 img {
@@ -1366,6 +1367,51 @@ width: 120%;
 #primeraa{
 
 border-radius: 10px;
+
+}
+#foto1{
+
+  background-color: #FFFFCC; /* Color de fondo para el primer slide */
+
+
+
+
+}
+#renta1{
+width: 45%;
+
+}
+#comunicate{
+
+color: #228B22;
+
+
+}
+#telefonoo{
+
+width: 5%;
+
+}
+#chulito{
+width: 4%;
+
+
+}
+#rentaaaa{
+
+text-align: right;
+text-transform: uppercase;
+font-size: 22px;
+}
+#asesoriaa{
+
+text-align: left;
+
+
+}
+#crecimiento{
+
+width: 10%;
 
 }
 </style>
@@ -1444,26 +1490,69 @@ border-radius: 10px;
 <div class="carousel-container">
   <button class="carousel-prev">‹</button>
   <div class="carousel-inner">
-    <div class="carousel-slide slide4">
+    <div id="foto1"  class="carousel-slide slide4">
   <div class="slide-content">
     <div class="slide-text">
       <!-- Aquí puedes poner tu texto o cualquier otro contenido -->
-      <h2>Asesorías contables, tributarias
-Propiedad horizontal
+      <h2 id="asesoriaa" >  <img  id="crecimiento" src="imagenes/crecimiento.png" alt=""> Asesorías contables, tributarias Propiedad horizontal
 Revisoría fiscal</h2>
-      <p>LOS BUENOS CONSEJOS GARANTIZAN BUENOS RESULTADOS.</p>
+      <p id="asesoriaa" >LOS BUENOS CONSEJOS GARANTIZAN BUENOS RESULTADOS.</p>
     </div>
     <img  id="primeraa" src="imagenes/fotofondo1.jpg" alt="Slide 4">
   </div>
 </div>
-    <div class="carousel-slide slide1">
-      <img id="renta" src="imagenes/RENTA.png" alt="Slide 1">
+
+
+
+<div class="carousel-slide slide1">
+  <div class="slide-content">
+    <div  class="slide-text">
+      <h2 id="rentaaaa" >No olvides presentar tu declaración de renta como persona natural para el año gravable 2023. El calendario establecido para este proceso es del 12 de agosto al 24 de octubre.</h2>
+      <!-- Requisitos con el ícono -->
+      <p><img  id="chulito" src="imagenes/marca-de-verificacion.png" alt="Chulito"> Patrimonio bruto que sea igual o superior a $190.854.000 año gravable 2023</p>
+      <p><img id="chulito" src="imagenes/marca-de-verificacion.png" alt="Chulito"> Ingresos totales sean iguales o superiores a $59.377.000 año gravable 2023</p>
+
+
+
+      <!-- Comunicación -->
+      <h2 id="comunicate"><img id="telefonoo" src="imagenes/llamada.png" alt="Teléfono"> Comunícate para más información</h2>
     </div>
+    <!-- Imagen principal del slide -->
+    <img id="renta1" src="imagenes/mifoto.png" alt="Slide 1">
+  </div>
+</div>
+
+
+
+
+
+
+
     <div class="carousel-slide slide2">
-      <img src="imagenes/renta2.jpg" alt="Slide 2">
+    <div class="slide-content">
+    <div class="slide-text">
+      <!-- Requisitos con el ícono -->
+      <h2><img  id="chulito" src="imagenes/marca-de-verificacion.png" alt="Chulito"> Patrimonio bruto que sea igual o superior a $190.854.000 año gravable 2023</h2>
+      <h2><img id="chulito" src="imagenes/marca-de-verificacion.png" alt="Chulito"> Ingresos totales sean iguales o superiores a $59.377.000 año gravable 2023</h2>
+      <h2>    </h2>
+      <!-- Comunicación -->
+      <h2 id="comunicate"><img id="telefonoo" src="imagenes/llamada.png" alt="Teléfono"> Comunícate para más información</h2>
     </div>
+    <!-- Imagen principal del slide -->
+    <img id="renta1" src="imagenes/asesoria-cont-financ_006.jpg" alt="Slide 1">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
     <div class="carousel-slide slide3">
-      <img src="imagenes/fimarhenider.png" alt="Slide 3">
+      <img src="" alt="Slide 3">
     </div>
 
     <!-- Agrega más slides según sea necesario -->
