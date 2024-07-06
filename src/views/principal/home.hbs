@@ -17,6 +17,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <body>
 
 <Style>
@@ -1410,6 +1412,239 @@ text-align: left;
 width: 10%;
 
 }
+
+
+.services-section {
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.services-section h2 {
+  font-size: 36px; /* Increase the font size */
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.service-item {
+  perspective: 1000px;
+}
+
+.service-card {
+  position: relative;
+  width: 100%;
+  height: 450px; /* Adjust the height as needed */
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-in-out; /* Faster and smoother transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+.service-card:hover {
+  transform: rotateY(180deg);
+}
+
+.service-card .front,
+.service-card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Ensure both front and back cover the whole card */
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card .front {
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color to stand out against the background image */
+}
+
+.service-card .back {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  transform: rotateY(180deg);
+}
+
+.service-card i {
+  font-size: 80px; /* Increase icon size */
+  color: #fff; /* Icon color to stand out against the background image */
+  margin-bottom: 20px; /* Space between icon and text */
+}
+
+.service-card p,
+.service-card ul,
+.service-card li {
+  font-size: 20px; /* Uniform font size */
+  color: #000;
+  line-height: 1.8; /* Uniform line height */
+  margin-top: 20px;
+  text-align: left;
+}
+
+.service-card ul {
+  padding-left: 20px;
+}
+
+.service-card li {
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .services-section h2 {
+    font-size: 28px; /* Smaller font size for mobile */
+  }
+
+  .service-card {
+    height: 350px; /* Adjust the height for mobile */
+  }
+
+  .service-card p,
+  .service-card ul,
+  .service-card li {
+    font-size: 16px; /* Smaller font size for mobile */
+    line-height: 1.5; /* Adjust line height for mobile */
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 20px;
+  }
+}
+.white-text {
+  color: white; /* White text for front cards */
+}
+.services-section {
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.services-section h2 {
+  font-size: 36px; /* Increase the font size */
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.service-item {
+  perspective: 1000px;
+}
+
+.service-card {
+  position: relative;
+  width: 100%;
+  height: 450px; /* Adjust the height as needed */
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-in-out; /* Faster and smoother transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+.service-card:hover {
+  transform: rotateY(180deg);
+}
+
+.service-card .front,
+.service-card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Ensure both front and back cover the whole card */
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card .front {
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color to stand out against the background image */
+}
+
+.service-card .back {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  transform: rotateY(180deg);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left; /* Align text to the left */
+}
+
+.service-card i {
+  font-size: 80px; /* Increase icon size */
+  color: #fff; /* Icon color to stand out against the background image */
+  margin-bottom: 20px; /* Space between icon and text */
+}
+
+.service-card p,
+.service-card ul,
+.service-card li {
+  font-size: 20px; /* Uniform font size */
+  color: #000;
+  line-height: 1.8; /* Uniform line height */
+  margin-top: 20px;
+  text-align: left;
+}
+
+.service-card .front .white-text {
+  color: #fff; /* White text for front cards */
+}
+
+.service-card ul {
+  padding-left: 20px;
+}
+
+.service-card li {
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .services-section h2 {
+    font-size: 28px; /* Smaller font size for mobile */
+  }
+
+  .service-card {
+    height: 350px; /* Adjust the height for mobile */
+  }
+
+  .service-card p,
+  .service-card ul,
+  .service-card li {
+    font-size: 16px; /* Smaller font size for mobile */
+    line-height: 1.5; /* Adjust line height for mobile */
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 20px;
+  }
+}
+
 </style>
 
 </Style>
@@ -1490,7 +1725,7 @@ width: 10%;
   <div class="slide-content">
     <div class="slide-text">
       <!-- Aquí puedes poner tu texto o cualquier otro contenido -->
-      <h2 id="asesoriaa" >  <img  id="crecimiento" src="src/public/imagenes/contador.png" alt=""> Asesorías contables, tributarias Propiedad horizontal
+      <h2 id="asesoriaa" >  <img  id="crecimiento" src="imagenes/contador.png" alt=""> Asesorías contables, tributarias Propiedad horizontal
 Revisoría fiscal</h2>
       <p id="asesoriaa" >LOS BUENOS CONSEJOS GARANTIZAN BUENOS RESULTADOS.</p>
     </div>
@@ -1554,7 +1789,7 @@ Revisoría fiscal</h2>
         <div class="slide-content">
     <div class="slide-text">
             
-            <h2 id="asesoriaa" >  <img  id="crecimiento" src="" alt=""> Medios Magnéticos Nacionales y Distritales</h2>
+            <h2 id="asesoriaa" >  <img  id="crecimiento" src="/imagenes/teneduria-de-libros.png" alt=""> Medios Magnéticos Nacionales y Distritales</h2>
       <p id="asesoriaa" >Presentación de informes de medios magnéticos a nivel nacional y distrital.</p>
 
       <!-- Requisitos con el ícono -->
@@ -1691,18 +1926,55 @@ Revisoría fiscal</h2>
     
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="services-section">
+  <h2>SERVICIOS TRIBUTARIOS Y EN IMPUESTOS</h2>
+  <div class="services-grid">
+    <div class="service-item">
+      <div class="service-card">
+        <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-outsourcing-contable.jpg');">
+          <i class="fas fa-chart-line"></i>
+          <p class="white-text">Consultoría y Asesoría Tributaria</p>
+        </div>
+        <div class="back">
+          <p>A través de nuestro servicio de consultoría y asesoramiento tributario satisfacemos las necesidades de nuestros clientes en materia de: todo lo relacionado con impuestos (Renta, Retención en la Fuente, IVA, Timbre, GMF, Riqueza, Predial, Vehículos, Industria y Comercio, etc); atención de defensas ante la vía gubernativa contra las administraciones de impuestos; cálculo de provisión de impuestos; cierre fiscal; estados financieros; revisión declaración de impuesto sobre la renta; entre otros.</p>
+        </div>
+      </div>
+    </div>
+    <div class="service-item">
+      <div class="service-card">
+        <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-que-es-un-asesor-fiscal.png');">
+          <i class="fas fa-shield-alt"></i>
+          <p class="white-text">Aseguramiento Tributario</p>
+        </div>
+        <div class="back">
+          <p>Nuestro equipo se compromete a realizar una revisión integral del debido cumplimiento de las obligaciones tributarias de su empresa. Atendemos la totalidad de consultas en materia de impuestos; atención de comités tributarios; alternativas de planeación fiscal; cálculo de la provisión de impuestos; revisión por parte de auditor tributario de las declaraciones tributarias; revisión previa de respuestas a requerimientos de administraciones de impuestos; respuestas a emplazamientos, pliego de cargos, requerimientos especiales y recursos de reconsideración.</p>
+        </div>
+      </div>
+    </div>
+    <div class="service-item">
+      <div class="service-card">
+        <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-el-valor-probatorio-en-el-litigio-tributario-1920-1080.png');">
+          <i class="fas fa-balance-scale"></i>
+          <p class="white-text">Litigios Tributarios</p>
+        </div>
+        <div class="back">
+          <p>Atención de defensas ante la vía gubernativa contra las administraciones de impuestos con respecto a los siguientes impuestos: Renta (incluyendo Retención en la Fuente), IVA, Timbre, GMF, Riqueza, Industria y Comercio, Predial y vehículos (respuestas a emplazamientos, pliego de cargos, requerimientos especiales y recursos de reconsideración). Apoderamiento para la presentación de acciones judiciales en la jurisdicción contenciosa administrativa contra actos que profieran las administraciones de impuestos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="service-item">
+      <div class="service-card">
+        <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-JM1.jpg');">
+          <i class="fas fa-star"></i>
+          <p class="white-text">Servicios Especiales</p>
+        </div>
+        <div class="back">
+          <p>Solicitud de saldos a favor. Atención de visitas de las administraciones de impuestos. Elaboración o revisión de Declaraciones de Renta. Asesoría en cierres Fiscales. Planeación Fiscal / Planeación Tributaria. Auditorías Tributarias. Outsourcing tributario. Consultoría contable con implicaciones tributarias. Planeación tributaria en la compra y venta de empresas y activos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
