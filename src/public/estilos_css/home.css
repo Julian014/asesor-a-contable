@@ -1375,6 +1375,10 @@ ul {
     }
 }
 
+
+
+
+
 body, html {
     margin: 0;
     padding: 0;
@@ -1706,5 +1710,14 @@ nav {
 
     .nav-responsive {
         display: none; /* Oculta la navegación responsive en escritorio */
+    }
+    .indicator{
+        display: none;
+    }
+    #indica{
+
+        display: none;
+
+
     }
 }

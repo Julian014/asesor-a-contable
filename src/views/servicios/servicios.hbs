@@ -362,7 +362,7 @@ body{
   height: 70px;
   line-height: 70px;
   position: relative;
-  z-index: 998;
+  z-index: 999;
 }
 
 .menu{
@@ -443,7 +443,6 @@ label{
 }
 
 .photo-text{
-  z-index: 1;
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -470,7 +469,7 @@ label{
   margin: 10px;
   cursor: pointer;
   position: relative;
-  z-index: 998;
+  z-index: 5;
 }
 
 .photo p{
@@ -479,7 +478,7 @@ label{
   letter-spacing: 1.5px;
   color: #D7DADE;
   position: relative;
-  z-index: 998;
+  z-index: 5;
 }
 
 .content{
@@ -963,7 +962,6 @@ ul li p{
   100%{left: -400%; opacity: 1;}
 }
 #aca{
-  z-index: 5;
     font-size: 30px;
 }
  .inner-text-container {
@@ -1161,96 +1159,6 @@ footer {
 
 
 }
-@media screen and (min-width: 850px) {
-    .nav-responsive {
-        display: none;
-    }
-
-    .dropdown-menu.visible {
-        display: none;
-    }
-
-}
-
-.dropdown-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-menu li {
-    padding: 12px 0;
-    text-align: center;
-    width: 100%;
-}
-
-.dropdown-menu li:active {
-    background-color: #3fb28b;
-}
-
-.dropdown-menu li:active a {
-    color: white;
-}
-#LOGO{
-width: 60%;
-height: 70%;
-
-}
-@media (max-width: 768px) {
-  
-    #ehas {
-        position: relative;
-        left: -84%;
-        top: 30px;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 
 
@@ -1272,17 +1180,7 @@ height: 70%;
 
 
 @media (max-width: 768px) {
-    #correos {
-        height: 3%;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-        box-sizing: border-box;
-        color: black;
-        font-size: 14px;
-    }
-
+  
  
     #ehas {
         position: relative;
@@ -1514,7 +1412,203 @@ height: 70%;
   z-index: 4;
 }
 
+
+
+
+
+
+
+
+
+
+/* Estilos específicos para dispositivos móviles */
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    #myCarousel {
+        display: none; /* Oculta el carrusel en dispositivos móviles */
+    }
+
+    .mobile-header {
+      z-index: 999;
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        color: white;
+    }
+
+    .mobile-header img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Asegura que la imagen cubra el área disponible */
+    }
+
   
+
+    /* Estilos para la navegación translúcida */
+    .nav-responsive {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Fondo translúcido */
+        z-index: 999; /* Asegura que la navegación esté por encima de la imagen */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+  
+
+   
+  
+
+
+   
+
+ 
+
+    .nav-responsive .overlay {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+      
+        background: rgba(0, 0, 0, 0.5); /* Fondo translúcido */
+        z-index: 5;
+        display: none;
+    }
+
+    .nav-responsive .overlay.show {
+        display: block;
+    }
+}
+
+/* Estilos para escritorio */
+@media only screen and (min-width: 769px) {
+    .mobile-header {
+        display: none; /* Oculta la imagen estática en escritorio */
+    }
+
+    .nav-responsive {
+        display: none; /* Oculta la navegación responsive en escritorio */
+    }
+    #corro{
+
+    }
+    
+footer{
+    display: none;
+}
+
+h6{
+
+font-size: 100px;
+
+}
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .foooter{
+        display: none;
+    }
+
+h6{
+
+font-size: 100px;
+
+}
+
+
+#correos{
+display: none;
+}
+
+
+
+
+.footer{
+    display: none;
+}
+
+
+
+
+
+
+ }
+
+
+/* Media query para dispositivos móviles */
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .inner-text {
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    padding: 20px;    /* Ajusta el relleno */
+    max-width: 100%;  /* Asegura que las cartas ocupen todo el ancho disponible */
+    min-height: 300px; /* Ajusta la altura mínima de las cartas */
+    box-sizing: border-box; /* Asegura que el relleno esté incluido en el tamaño total */
+  }
+
+  .service-icon {
+    font-size: 2.5em; /* Ajusta el tamaño del icono */
+    margin-bottom: 15px; /* Ajusta el margen inferior del icono */
+  }
+
+  .inner-text h3 {
+    font-size: 1.5em; /* Ajusta el tamaño del título */
+    margin: 10px 0; /* Ajusta el margen */
+  }
+
+  .text-box h5 {
+    font-size: 1em; /* Ajusta el tamaño del subtítulo */
+    margin: 10px 0; /* Ajusta el margen */
+  }
+
+  .text-box p {
+    font-size: 0.9em; /* Ajusta el tamaño del párrafo */
+    margin: 5px 0; /* Ajusta el margen */
+  }
+  header{
+position: relative;
+top: 50px;
+  }
+
+.footer-content{
+    display: none;
+}
+
+
+.contact-info{
+    position: relative;
+    top: 50px;
+}
+h6{
+
+font-size: 100px;
+
+}
+  header h6 {
+        color: white;
+        font-weight: lighter;
+        font-size: 5.9vw;
+        margin: 20px 0 0 0; /* Añadir margen superior para separar del h4 */
+        position: relative;
+        right: 0; /* Centramos de nuevo quitando el desplazamiento */
+    }
+}
+
+
+
+
+
+
+
+
 </Style>
 <body>
 
@@ -1522,12 +1616,13 @@ height: 70%;
 
 
 
-    <section id="correos">
+
+        <section id="correos">
         <div class="contacto-item">
             <img src="imagenes/gmail.png" alt="Correo">
             <h5 id="micorreo">andreafrancocontadora@gmail.com</h5>
         </div>
-        <div id="ehas" class="contacto-item">
+        <div class="contacto-item">
             <img src="imagenes/llamada.png" alt="Teléfono">
             <span>3223958005 </span>
         </div>
@@ -1537,70 +1632,46 @@ height: 70%;
 
 
 
-
-
-
-
-
-
-
-
-    <nav class="nav-responsive">   
-            <div class="menu-toggle" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="overlayy" id="overlayy"></div>
-            <div class="container">
-                <ul class="menu" id="menu">
-                    <li><a href="/principal">Inicio</a></li>
-                    <li><a href="/servicios">Servicios</a></li>
-                    <li><a href="/informacion">Nosotros</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <nav class="nav-desktop">
-        <a href="index.html">
-            <div class="logo-box">
-                <img class="nav-logo" id="LOGO" src="imagenes/LOGO JENIFER.png" alt="Logo">
-            </div>
-        </a>
-        <ul>
-            <li class="feat-link"><a href="/principal">INICIO</a></li>
-            <li class="feat-link"><a href="/servicios">SERVICIOS</a></li>
-            <div class="nav-separator"></div>
-            <li class="grey-link"><a href="/informacion">INFORMACION</a></li>
-            <li class="grey-link"><a href="/contacto">CONTACTENOS</a></li>
+  
+<nav class="nav-responsive">
+    <div class="menu-toggle" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+                <img class="nav-logo" id="LOGO" src="/imagenes/LOGOJENIFEEER-removebg-preview.png" alt="Logo">
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+        <ul class="menu" id="menu">
+            <li><a href="/principal">Inicio</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/informacion">Nosotros</a></li>
+            <li><a href="/contacto">Contacto</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
 
 
+<nav class="nav-desktop">
+    <a href="index.html">
+<div class="logo-box">
+    <img class="nav-logo"  id="LOGO" src="imagenes/LOGO JENIFER.png" alt="Logo">
+</div>
 
-
-
+    </a>
+                
+    <ul>
+        <li class="feat-link"><a href="/principal">INICIO</a></li>
+        <li class="feat-link"><a href="/servicios">SERVICIOS</a></li>
+        <div class="nav-separator"></div>
+        <li class="grey-link"><a href="/informacion">INFORMACION</a></li>
+        <li class="grey-link"><a href="/contacto">CONTACTENOS</a></li>
+    </ul>
+</nav>
 
 
 
 <section class="photo" id="inicio">
   
-  <div class="nav" id="sticker">
-  <input type="checkbox" id="toggle" />
-  <div class="menu">
- 
+  
   </div>
 </div>
 
@@ -1610,9 +1681,11 @@ height: 70%;
 
 
   <div class="photo-text">
- <h4 data-ix="skype" id="servi" >SERVICIOS</h4>
+ <h4 data-ix="skype">SERVICIOS</h4>
   <p id="aca" data-ix="subtitle-hero-up">Aca veras todos nuestros servicios para obtener más información, selecciona el servicio </p>
   <div class="overlay"></div>
+
+
   </section>
 
 
@@ -1622,13 +1695,7 @@ height: 70%;
 
 
 
-
-
-
-
-
-
-
+  
   <section class="content">
     <div class="grand-title" id="servicio">
       <h4 data-ix="slowfade-scroll-bigs">SELECCIONA EL SERVICIO QUE NECESITAS</h4>
