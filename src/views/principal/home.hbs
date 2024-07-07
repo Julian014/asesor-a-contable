@@ -1,1823 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="utf-8">
-        <meta name="author" content="Javiera Craig">
-        <title>ASESORIA CONTABLE</title>
-        <meta name="description" content="Asociación para la promoción del uso sostenible de los recursos forestales">
-        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/contabilidad.png">
-        <html lang="es-ES"></html>
-        <meta name="viewport" content="width=device-width">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Javiera Craig">
+    <title>ASESORIA CONTABLE</title>
+    <meta name="description" content="Asociación para la promoción del uso sostenible de los recursos forestales">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/contabilidad.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
 
-<Style>
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i');
-
-* {
-    box-sizing: border-box;
-      font-family: "Roboto", sans-serif;
-  font-weight: 100;
-   }
 
 
-a {
-    text-decoration: none;
-    color: #333333;
-  }
-
-h1 {
-    font-size: 2rem;
-     }
-
-h2 {
-    font-size: 1.75rem;
-  }
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #333;
-   }
-
-h4 {
-    font-size: 1.25rem;
-  }
-
-h5 {
-    font-size: 1.125rem;
-  }
 
 
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 300;
-    width: auto;
-    height: auto;
-}
+
+
     
-
-.nav-desktop {
-    background-color: #3366cc;
-    padding: 10px;
-    width: 100%;
-    min-height: 48px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-@media screen and (max-width: 850px) {
-    .nav-desktop {
-        display: none;
-    }
-}
-
-.nav-logo {
-    /*5background-color: aqua;*/
-    padding: 0 0 0 25px;
-    width: auto;
-    height: 28px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s;
-}
-
-.nav-logo:hover {
-    transform: translate(0, 0) scale(1.04);
-    transform-origin: center bottom;
-}
-
-.nav-logo svg:hover {
-    box-shadow: 5px 10px 10px rgba(56, 56, 56, 1);
-}
-
-.nav-separator {
-    margin: 0 15px;
-    background-color: #333333;
-    display: flex;
-    width: 1px;
-    height: 1.5em;
-}
-
-.nav-desktop ul {
-    padding: 0 20px 0 0;
-    /*background-color: aquamarine;*/
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-self: right;
-    min-height: inherit;
-    margin: 0 0 0 auto;
-  }
-
-.nav-desktop li {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-  }
-
-.feat-link a {
-        color: white;
-
-    padding: 5px 15px;
-    font-size: 20px;
-    font-weight: 500;
-    display: flex;
-    border-style: 1px solid black;
-    transition: all 0.3s;
-    transition-timing-function: ease;
-
-  }
-
-.feat-link a:hover {
-    box-shadow: 2.5px 4px rgb(51, 51, 51);
-    transform: translate(-2px, -2px);
-    border-style: 1px solid black;
-    /* font-weight: 600; */
-  }
-
-.grey-link a {
-    padding: 5px 15px;
-    font-size: 22px;
-    font-weight: 400;
-    display: flex;
-    color: white;
-    transition: all 0.3s;
-    transition-timing-function: ease-out;
-    /*align-items: center;*/
-  }
-
-.grey-link a:hover {
-    /* font-weight: 500; */
-    box-shadow: 2.5px 4px rgb(63, 178, 139);
-    transform: translate(0, -2px);
-  }
-
-.nav-responsive {
-    background-color: white;
-    padding: 10px 15px;
-    width: 100vw;
-    min-height: 48px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.nav-logo-resp {
-    background-image: url(assets/icons/errotuz_logo_resp.svg);
-    /* background-color: #333; */
-    height: 32px;
-    width: 31px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    z-index: 2;
-}
-
-/* .nav-logo-resp a {
-    display: flex;
-} */
-
-.hamburger {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #f1f1f1;
-    height: 21px;
-    width: 32px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    cursor: pointer;
-}
-
-.rectangle {
-  display: flex;
-  background-color: #bbbbbb;
-  height: 4px;
-  width: 100%;
-}
-
-.dropdown-menu {
-    background-color: #f0f0f0;
-    padding: 16px;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    pointer-events: none;
-    opacity: 0;
-    transition: all 0.2s;
-    transition-timing-function: ease-out;
-}
-
-.dropdown-menu.visible {
-    background-color: #fff;
-    box-shadow: 4px 12px 20px rgba(3, 38, 43, 0.164); 
-    padding: 16px;
-    width: 100%;
-    position: absolute;
-    opacity: 1;
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    transition: all 0.2s;
-    transition-timing-function: ease-out;
-    pointer-events: unset;
-}
-
-@media screen and (min-width: 850px) {
-    .nav-responsive {
-        display: none;
-    }
-
-    .dropdown-menu.visible {
-        display: none;
-    }
-
-}
-
-.dropdown-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-menu li {
-    padding: 12px 0;
-    text-align: center;
-    width: 100%;
-}
-
-.dropdown-menu li:active {
-    background-color: #3fb28b;
-}
-
-.dropdown-menu li:active a {
-    color: white;
-}
-
-section {
-    padding: 32px auto;
-    display: flex;
-    justify-content: center;
-    height: auto;
-
-}
-
-section.featured {
-    position: relative;
-    padding: 0 0 64px 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 55vh;
-    justify-content: center;
-    overflow: hidden; /* Asegura que los degradados no desborden la sección */
-}
-
-section.featured::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Asegura que esté detrás del contenido */
-    background: linear-gradient(to bottom right, #ffffff     50%, transparent 50%);
-}
-
-
-body{
-
-    background-color: #3366cc;
-}
-
-
-.card-container {
-    /*background-color: gray;*/
-    margin: 10px auto;
-    width: 1000px;
-    max-width: 1040px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.title-container {
-    color: white;
-        background-color:   rgb(1, 40, 78,0.9); /* Fondo oscuro para contraste */
-
-    margin: 64px auto; /* Centramos el contenedor horizontalmente */
-    padding: 20px; /* Añadimos espacio alrededor del contenido */
-    width: 80%; /* Hacemos el contenedor un poco más ancho */
-    max-width: 960px; /* Limite máximo de anchura */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
-    text-align: center; /* Centrar el texto */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.title-container h3 {
-    margin: 0 auto 0 0;
-    display: inline-flex;
-    color: #01284e;
-}
-
-.card {
-    
-   /* margin: 20px;*/
-    background-color: black;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    width: 288px;
-    height: 304px;
-    box-shadow: 5px 5px 20px rgba(75, 72, 78, 0.25);
-    overflow: hidden;
-    transform: translate(0, 0);
-    transition: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.card:hover {
-    transform: translate(0, -8px);
-
-}
-
-.card-inv {
-    background-image: url(imagenes/ESTADOSFINACION.jpeg);
-    background-size: cover;
-}
-
-.card-edu {
-    background-image: url(imagenes/servi2.jpg);
-    background-size: cover;
-
-}
-
-.card-ases {
-    background-image: url(imagenes/servi3.jpeg);
-    background-size: cover;
-    background-position: right;
-
-}
-
-.card-summary {
-    background-color: white;
-    padding: 0px 10px 5px 10px;
-    /* filter: grayscale(100%);*/
-    /*fill-opacity: 50%;*/
-    
-    width: 100%;
-    height: auto;
-    position: relative;
-    text-overflow: ellipsis;
-    transform: translate(0,94px);
-    line-height: 24px;
-    transition-timing-function: ease;
-    display: inline-block;
-}
-
-.card-summary h4 {
-    line-height: 1em;
-    padding: 0px;
-    margin: 16px 0;
-  }
-
-
-.card:hover .card-summary {
-    transform: translate(0, 0);
-  }
-
-
-
-
-p.small {
-    font-size: 0.875rem;
-
-}
-
-.cta-main {
-    /*background-color: #3fb28b;*/
-    background-image: linear-gradient(-64deg, #3ac093, #15e2c7);
-    margin: 64px auto;
-    padding: 16px 30px;
-    height: 48px;
-    width: auto;
-    border-radius: 24px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    transform: translate(0, 0);
-    transition: 0.3s;  
-}
-
-.cta-main:hover {
-    box-shadow: 5px 5px 20px rgba(7, 131, 110, 0.25);
-    transform: translate(0, -5px);
-    background-image: linear-gradient(-34deg, #3ac093, #15e2c7);
-}
-
-.cta-text {
-    font-size: 1rem;
-    font-weight: 500;
-    color: black;
-    letter-spacing: 0.6px;
-}
-
-@media screen and (max-width: 970px) {
-    
-    .title-container {
-    
-        padding: 0;
-        text-align: center;
-        width: 100%;
-        /* max-width: unset; */
-        margin: 32px auto;
-    }
-
-    .card-container {
-        /*background-color: #bbbbbb;*/
-        flex-direction: column;
-        width: 80vw;
-        justify-content: space-around;
-    }
-
-    .card {
-        margin: 16px 0;
-    }
-}
-
-
-#LOGO{
-width: 60%;
-height: 70%;
-
-}
-
-
-.container--redes {
-  width: 400px;
-  left: 0;
-  position: fixed;
-  top: 25%;
-  z-index: 1; /* Reducimos el z-index para asegurar que esté detrás del carusel */
-}
-
-.icon{
-  top:50%;
-  position:relative;
-  margin-bottom:10px;
-  }
-
-
-.icon-primary{
-  display:inline-block;
-  text-decoration:none;
-  color:#fff;
-  background-color:#3b5998;
-  border-radius:100%;
-  position:relative;
-  z-index:1;
-  box-shadow:1px 0 1px rgba(0,0,0,.5);
-  height:40px;
-  width:40px;
-  text-align:center;
-  line-height:40px;
-  }
-
-.container-description{
-  overflow:hidden;
-  position:absolute;
-  top:0;
-  left:24px;
-
-}
-
-.icon-description{
-  width:250px;
-  display:inline-block;
-  text-decoration:none;
-  color:#fff;
-  background-color:#3b5998;
-  height:40px;
-  line-height:40px;
-  padding-left:40px;
-  border-radius:0 20px 20px 0;
-  transform: translate3d(-110%, 0, 0);
-  transition:transform 175ms ease;
-}
-
-.icon-primary:hover  ~ .container-description .icon-description{
-     transform: translate(0, 0);
-  
-}
-
-/*colores para redes sociales*/
-.color-twitter{
-  background-color:white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.color-whatsapp {
-
-  background-image: url('imagenes/whatsapp.png');
-  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
-  background-size: cover; /* Ajusta el tamaño del fondo */
-  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
-  width: 40px; /* Ancho del icono, ajusta según sea necesario */
-  height: 40px; /* Alto del icono, ajusta según sea necesario */
-  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
-  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
-}
-
-
-
-
-.color-whatsapp-text {
-    position: relative; /* Establece posición relativa para permitir superposición */
-    display: inline-block;
-    padding: 10px 15px;
-    color: #fff;
-    background-image: url('imagenes/whatsapp.png');
-    background-size: cover;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
-}
-
-.color-whatsapp-text span {
-    position: relative; /* Establece posición relativa para permitir superposición */
-    z-index: 1; /* Asegura que el texto esté por encima del fondo */
-}
-
-
-
-
-
-
-.color-gmail {
-
-    background-image: url('imagenes/gmail.png');
-  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
-  background-size: cover; /* Ajusta el tamaño del fondo */
-  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
-  width: 40px; /* Ancho del icono, ajusta según sea necesario */
-  height: 40px; /* Alto del icono, ajusta según sea necesario */
-  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
-  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
-}
-
-
-
-
-
-.color-gmail-text {
-    position: relative; /* Establece posición relativa para permitir superposición */
-    display: inline-block;
-    padding: 10px 15px;
-    color: #fff;
-    background-size: cover;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
-}
-
-.color-gmail-text span {
-    position: relative; /* Establece posición relativa para permitir superposición */
-    z-index: 1; /* Asegura que el texto esté por encima del fondo */
-}
-
-  #fotoo {
-            border-radius: 18px;
-            width: 70%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-            border: 5px solid white; /* Borde */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación */
-        }
-
-        #fotoo:hover {
-            transform: scale(1.05); /* Aumenta el tamaño ligeramente */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
-        }
-
-        /* Estilos de la sección de atención */
-        .attention {
-            position: relative;
-            left: 5%;
-            background-color: #4682b4;   
-         padding: 4rem 0;
-        }
-
-        .attention .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-
-        .attention-text {
-            width: 60%;
-            padding: 0 1rem;
-            box-sizing: border-box;
-        }
-
-        .attention-text h2 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .attention-text h4 {
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .attention-text ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-        }
-
-        .attention-text p {
-            font-size: 1.125rem;
-            color: #666;
-        }
-
-        .attention-image {
-            width: 40%;
-            padding: 0 1rem;
-            box-sizing: border-box;
-        }
-
-        /* Estilos para dispositivos móviles */
-        @media (max-width: 768px) {
-            .attention .container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .attention-text,
-            .attention-image {
-                width: 100%;
-                padding: 0;
-            }
-
-            .attention-text {
-                margin-bottom: 2rem;
-            }
-        }
-     .cuadro-color {
-            width: 30%; /* Aumentado el ancho para mejor visibilidad */
-            position: absolute;
-            left: 30%;
-            transform: translateX(-50%); /* Centra el cuadro horizontalmente */
-            background-color: #228B22;
-            color: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mejorada */
-            text-align: center;
-            z-index: 999;
-            border: 5px solid white; /* Borde mejorado */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación */
-        }
-
-        .cuadro-color:hover {
-            transform: translateX(-50%) scale(1.05); /* Escala al pasar el ratón */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
-        }
-
-        .cuadro-color h5 {
-            margin: 0; /* Elimina márgenes para un mejor ajuste del texto */
-            font-size: 18px; /* Tamaño de fuente ajustado */
-        }
-     #correos {
-            height: 40px; /* Ajusta la altura según sea necesario */
-            background-color: white      ;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 10px;
-            box-sizing: border-box;
-            color: black;
-            font-size: 14px;
-        }
-        .contacto-item {
-            display: flex;
-            align-items: center;
-        }
-        .contacto-item img {
-            width: 20px; /* Ajusta el tamaño de las imágenes según sea necesario */
-            height: 20px;
-            margin-right: 5px;
-        }
-        /* Añadir a tu CSS existente */
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-/* Verificar ancho del container--redes */
-.container--redes {
-    width: 100%; /* Asegúrate de que el contenedor no exceda el 100% del ancho */
-}
-
-/* Asegurarse de que los elementos dentro de nav-desktop no se desborden */
-.nav-desktop ul {
-    flex-wrap: nowrap; /* Evita el desbordamiento en las listas */
-}
-
-/* Ajustar anchos específicos si es necesario */
-header, .nav-desktop, .dropdown-menu {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-
-
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
-    }
-}
-.clients {
-    background: #fff; /* Cambia el color de fondo según tu diseño */
-    padding: 4rem 0;
-}
-
-.clients .container {
-    text-align: center;
-}
-
-.clients h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.client-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ajusta el número de columnas según tu diseño */
-    gap: 20px;
-}
-
-.client-item img {
-    max-width: 100%;
-    height: auto;
-}
-/* Asegúrate de que el contenedor de la imagen ocupe todo el ancho y no tenga padding ni margen */
-      .full-width-section {
-          
-            width: 100vw; /* Hace que el section ocupe todo el ancho de la pantalla */
-            padding: 0;   /* Elimina cualquier padding por defecto */
-            margin: 0;    /* Elimina cualquier margin por defecto */
-        }
-
-        .full-width-image {
-              position: relative;
-            right: 5%;
-            width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
-            height: auto; /* Mantiene la proporción de la imagen */
-            display: block; /* Elimina cualquier espacio en línea alrededor de la imagen */
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100vw; /* Asegura que el body y html ocupen todo el ancho de la pantalla */
-            overflow-x: hidden; /* Evita el desplazamiento horizontal */
-        }
-
-footer {
-    background-color: #3366cc;
-    color: white;
-    padding: 40px 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-column {
-    flex: 1;
-    margin: 20px;
-    min-width: 250px;
-}
-
-.footer-column h4 {
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.footer-column p, .footer-column ul, .footer-column a {
-    font-size: 14px;
-    color: white;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li {
-    margin-bottom: 10px;
-}
-
-.footer-column ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-}
-
-.footer-column ul li a:hover {
-    color: #E58859;
-}
-
-.social-media {
-    display: flex;
-}
-
-.social-media a {
-    font-size: 20px;
-    margin-right: 10px;
-    color: white;
-    transition: color 0.3s;
-}
-
-.social-media a:hover {
-    color: #E58859;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    border-top: 1px solid #666;
-    padding-top: 20px;
-}
-
-.footer-bottom p {
-    margin: 0;
-}
-
-
-
-
-    .contenido h4 {
-        color: #01284e;
-        font-size: 30px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-    }
-
-    .contenido p {
-        font-size: 20px;
-        line-height: 1.6;
-        margin-bottom: 25px;
-    }
-
-    .contenido ul {
-        list-style-type: none;
-        padding-left: 0;
-        margin-bottom: 25px;
-    }
-
-    .contenido li {
-        font-size: 20px;
-        margin-bottom: 10px;
-        position: relative;
-        padding-left: 20px;
-    }
-
-    .contenido li:before {
-        content: "\2022";
-        position: absolute;
-        left: 0;
-        color: #4CAF50;
-    }
-
-    .boton-solicitar {
-        background-color: #4CAF50;
-        color: white;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 18px;
-        text-transform: uppercase;
-        transition: background-color 0.3s;
-    }
-
-    .boton-solicitar:hover {
-        background-color: #45a049;
-    }
-
-    /* Estilos para el contenedor de la imagen */
-    .imagen-container {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-right: 30px;
-    }
-
-    .imagen-container img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 50%;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .imagen-container:hover img {
-        transform: scale(1.1);
-    }
-
-    .texto-bajo-imagen {
-        margin-top: 15px;
-    }
-
-    .texto-bajo-imagen h5 {
-        font-size: 20px;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-    }
-
-    .texto-bajo-imagen p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
- 
-    /* Estilos para el contenido principal (tu página) */
-    #main-content {
-      display: none; /* Oculta el contenido principal inicialmente */
-    }
-
-
-
-
-.carousel-container {
-        z-index: 9999; /* Valor alto para asegurar que esté por encima de todo */
-
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-inner {
-  display: flex; /* Mostrar slides en línea horizontalmente */
-  transition: transform 0.5s ease; /* Transición suave para el desplazamiento */
-}
-
-.carousel-slide {
-  flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho */
-  display: flex;
-  align-items: center; /* Centrar verticalmente los contenidos */
-  background-color: #f0f0f0; /* Color de fondo para los slides */
-}
-
-.slide-content {
-  flex: 1;
-  text-align: right; /* Alinear el texto a la derecha */
-}
-
-.slide-content h2 {
-  font-weight: bold; /* Texto del título en negrita */
-}
-
-.slide-content p {
-  font-weight: bold; /* Texto del párrafo en negrita */
-}
-
-.slide-image {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-}
-
-.slide-image img {
-  max-width: 100%;
-  height: auto;
-  max-height: 200px; /* Altura máxima para la imagen */
-  border-radius: 10px; /* Bordes redondeados para la imagen */
-}
-
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1.5em;
-  cursor: pointer;
-  z-index: 1000; /* Asegura que estén encima de todo */
-}
-
-.carousel-prev {
-  left: 10px;
-}
-
-.carousel-next {
-  right: 10px;
-}
-/* Estilos generales */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Estilos específicos para la sección 'atencion' */
-
-/* Estilos específicos para la sección 'atencion' */
-#atencion {
-  background-color: #f0f0f0;
-  color: #333;
-  text-align: center;
-  padding: 60px 20px; /* Aumenta el espacio alrededor del contenido */
-}
-
-.container {
-  max-width: 1200px; /* Ancho máximo del contenido aumentado */
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.text {
-  flex-grow: 1;
-  text-align: left;
-}
-
-.text h2 {
-  margin-top: 0;
-  font-size: 2.5rem; /* Aumenta el tamaño del título */
-  color: #333;
-}
-
-ul {
-  padding: 0;
-  margin-top: 0;
-  list-style-type: none;
-  font-size: 1.2rem; /* Aumenta el tamaño del texto de la lista */
-}
-
-.photo {
-  text-align: center;
-}
-
-.photo img {
-  max-width: 300px; /* Aumenta el tamaño máximo de la imagen */
-  height: auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta el tamaño y suavidad de la sombra */
-}
-    .section.attention {
-      background-color: #ffffff; /* Color de fondo de la sección */
-      padding: 40px 0; /* Espaciado interno */
-      border-radius: 10px; /* Bordes redondeados */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ligera */
-    }
-    .section.attention .container {
-      max-width: 100%; /* Ancho máximo */
-    }
-    .card {
-      border: none; /* Sin borde en la tarjeta */
-      border-radius: 10px; /* Bordes redondeados */
-      overflow: hidden; /* Ocultar desbordamientos */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ligera */
-    }
-    .card img {
-      width: 100%; /* Imagen al 100% del contenedor */
-      height: auto; /* Altura automática */
-      border-top-left-radius: 10px; /* Bordes redondeados superiores */
-      border-top-right-radius: 10px;
-    }
-    .card-body {
-      background-color: #f9f9f9; /* Color de fondo del cuerpo de la tarjeta */
-      text-align: center; /* Alineación centrada del texto */
-    }
-    .card-title {
-      color: #333; /* Color del título */
-      margin-bottom: 0; /* Sin margen inferior */
-    }
-    .card-text {
-      color: #666; /* Color del texto */
-    }
-    .services {
-      background-color: #ffffff; /* Color de fondo del área de servicios */
-      border-radius: 10px; /* Bordes redondeados */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ligera */
-      padding: 20px; /* Espaciado interno */
-    }
-    .services h3 {
-      color: #333; /* Color del título */
-      text-align: center; /* Alineación centrada del texto */
-    }
-    .services ul {
-      list-style-type: none; /* Sin viñetas */
-      padding: 0; /* Sin relleno */
-      margin: 0; /* Sin margen */
-      text-align: left; /* Alineación izquierda */
-    }
-
-
-
-
-
-
-.carousel-container {
-  position: relative; /* Añadido para que funcione el z-index */
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  height: 300px; /* Altura fija para el carrusel */
-  z-index: 2; /* Carrusel por encima */
-}
-
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
-  height: 100%; /* Asegura que el contenedor interno ocupe toda la altura del contenedor del carrusel */
-}
-
-.carousel-slide {
-  flex: 0 0 100%;
- 
-  box-sizing: border-box;
-  height: 100%; /* Asegura que cada slide ocupe toda la altura del contenedor del carrusel */
-  display: flex; /* Asegura que el contenido del slide se ajuste */
-  justify-content: center; /* Centra la imagen horizontalmente */
-  align-items: center; /* Centra la imagen verticalmente */
-}
-
-.carousel-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin recortarse */
-}
-
-.carousel-prev, .carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.carousel-prev {
-  left: 10px;
-}
-
-.carousel-next {
-  right: 10px;
-}
-#renta{
-width: 120%;
-
-
-}
-#mifo{
-    width: 160%;
-
-
-
-}
-
-/* Colores de fondo para cada slide */
-.slide1 {
-  background-color: #E6E6FA; /* Color de fondo para el primer slide */
-}
-
-.slide2 {
-  background-color: #B2EBF2; /* Color de fondo para el segundo slide */
-}
-
-.slide3 {
-  background-color: #F8BBD0; /* Color de fondo para el tercer slide */
-}
-
-.carousel-prev, .carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.carousel-prev {
-  left: 10px;
-}
-
-.carousel-next {
-  right: 10px;
-}
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  height: 300px; /* Altura fija para el carrusel */
-  z-index: 2; /* Carrusel por encima */
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
-  height: 100%; /* Asegura que el contenedor interno ocupe toda la altura del contenedor del carrusel */
-}
-
-.carousel-slide {
-  flex: 0 0 100%;
-
-  box-sizing: border-box;
-  height: 100%; /* Asegura que cada slide ocupe toda la altura del contenedor del carrusel */
-  display: flex; /* Asegura que el contenido del slide se ajuste */
-  justify-content: center; /* Centra la imagen horizontalmente */
-  align-items: center; /* Centra la imagen verticalmente */
-  position: relative; /* Añadido para posicionar los indicadores relativamente */
-}
-
-.carousel-slide img {
-
-  object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin recortarse */
-}
-
-.carousel-indicators {
-  position: absolute;
-  bottom: 10px; /* Ajusta la posición vertical según sea necesario */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3; /* Indicadores por encima del carrusel */
-}
-
-.indicator {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-/* Estilos para el indicador activo */
-.indicator.active {
-  background-color: red; /* Color de fondo cuando el indicador está activo */
-}
-.carousel-slide.slide4 {
-  display: flex;
-  align-items: center; /* Alinea el contenido verticalmente */
-  justify-content: space-between; /* Distribuye el contenido horizontalmente */
-}
-
-.slide-content {
-  display: flex;
-  align-items: center; /* Alinea el contenido verticalmente */
-  justify-content: space-between; /* Distribuye el contenido horizontalmente */
-  width: 100%;
-}
-
-.slide-text {
-  position: relative;
-  left: 10%;
-  max-width: 40%; /* Ajusta el ancho del texto según sea necesario */
-  padding: 0 5px; /* Añade espacio alrededor del texto */
-}
-
-.carousel-slide.slide4 img {
-  max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
-}
-#primeraa{
-
-border-radius: 10px;
-
-}
-#foto1{
-
-  background-color: #FFFFCC; /* Color de fondo para el primer slide */
-
-
-
-
-}
-#renta1{
-width: 45%;
-
-}
-#comunicate{
-
-color: #228B22;
-
-
-}
-#telefonoo{
-
-width: 5%;
-
-}
-#chulito{
-width: 4%;
-
-
-}
-#rentaaaa{
-
-text-align: right;
-text-transform: uppercase;
-font-size: 22px;
-}
-#asesoriaa{
-
-text-align: left;
-
-
-}
-#crecimiento{
-
-width: 10%;
-
-}
-
-
-.services-section {
-  text-align: center;
-  padding: 40px 20px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-}
-
-.services-section h2 {
-  font-size: 36px; /* Increase the font size */
-  margin-bottom: 30px;
-  color: #000;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.service-item {
-  perspective: 1000px;
-}
-
-.service-card {
-  position: relative;
-  width: 100%;
-  height: 450px; /* Adjust the height as needed */
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease-in-out; /* Faster and smoother transition */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
-}
-
-.service-card:hover {
-  transform: rotateY(180deg);
-}
-
-.service-card .front,
-.service-card .back {
-  position: absolute;
-  width: 100%;
-  height: 100%; /* Ensure both front and back cover the whole card */
-  backface-visibility: hidden;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.service-card .front {
-  background-size: cover;
-  background-position: center;
-  color: #fff; /* Text color to stand out against the background image */
-}
-
-.service-card .back {
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-  transform: rotateY(180deg);
-}
-
-.service-card i {
-  font-size: 80px; /* Increase icon size */
-  color: #fff; /* Icon color to stand out against the background image */
-  margin-bottom: 20px; /* Space between icon and text */
-}
-
-.service-card p,
-.service-card ul,
-.service-card li {
-  font-size: 20px; /* Uniform font size */
-  color: #000;
-  line-height: 1.8; /* Uniform line height */
-  margin-top: 20px;
-  text-align: left;
-}
-
-.service-card ul {
-  padding-left: 20px;
-}
-
-.service-card li {
-  margin-bottom: 10px;
-}
-
-/* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-  .services-section h2 {
-    font-size: 28px; /* Smaller font size for mobile */
-  }
-
-  .service-card {
-    height: 350px; /* Adjust the height for mobile */
-  }
-
-  .service-card p,
-  .service-card ul,
-  .service-card li {
-    font-size: 16px; /* Smaller font size for mobile */
-    line-height: 1.5; /* Adjust line height for mobile */
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr; /* Single column layout for mobile */
-    gap: 20px;
-  }
-}
-.white-text {
-  color: white; /* White text for front cards */
-}
-.services-section {
-  text-align: center;
-  padding: 40px 20px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-}
-
-.services-section h2 {
-  font-size: 36px; /* Increase the font size */
-  margin-bottom: 30px;
-  color: #000;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.service-item {
-  perspective: 1000px;
-}
-
-.service-card {
-  position: relative;
-  width: 100%;
-  height: 450px; /* Adjust the height as needed */
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease-in-out; /* Faster and smoother transition */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
-}
-
-.service-card:hover {
-  transform: rotateY(180deg);
-}
-
-.service-card .front,
-.service-card .back {
-  position: absolute;
-  width: 100%;
-  height: 100%; /* Ensure both front and back cover the whole card */
-  backface-visibility: hidden;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.service-card .front {
-  background-size: cover;
-  background-position: center;
-  color: #fff; /* Text color to stand out against the background image */
-}
-
-.service-card .back {
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-  transform: rotateY(180deg);
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: left; /* Align text to the left */
-}
-
-.service-card i {
-  font-size: 80px; /* Increase icon size */
-  color: #fff; /* Icon color to stand out against the background image */
-  margin-bottom: 20px; /* Space between icon and text */
-}
-
-.service-card p,
-.service-card ul,
-.service-card li {
-  font-size: 20px; /* Uniform font size */
-  color: #000;
-  line-height: 1.8; /* Uniform line height */
-  margin-top: 20px;
-  text-align: left;
-}
-
-.service-card .front .white-text {
-  color: #fff; /* White text for front cards */
-}
-
-.service-card ul {
-  padding-left: 20px;
-}
-
-.service-card li {
-  margin-bottom: 10px;
-}
-
-/* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-  .services-section h2 {
-    font-size: 28px; /* Smaller font size for mobile */
-  }
-
-  .service-card {
-    height: 350px; /* Adjust the height for mobile */
-  }
-
-  .service-card p,
-  .service-card ul,
-  .service-card li {
-    font-size: 16px; /* Smaller font size for mobile */
-    line-height: 1.5; /* Adjust line height for mobile */
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr; /* Single column layout for mobile */
-    gap: 20px;
-  }
-}
-
-</style>
-
-</Style>
-
     <section id="correos">
         <div class="contacto-item">
             <img src="imagenes/gmail.png" alt="Correo">
             <h5 id="micorreo">andreafrancocontadora@gmail.com</h5>
         </div>
-        <div class="contacto-item">
+        <div id="ehas" class="contacto-item">
             <img src="imagenes/llamada.png" alt="Teléfono">
-            <span>3223958005 </span>
+            <span>3223958005</span>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
 <nav class="nav-responsive">
-    <a href="index.html">
-        <div class="nav-logo-resp">
-        </div>
-    </a> 
-    <div class="hamburger">
-        <div class="rectangle">
-        </div>
-        <div class="rectangle">
-        </div>
-        <div class="rectangle">
-        </div>
-    </div>      
-</nav>
-    
-<nav class="nav-desktop">
-    <a href="index.html">
-<div class="logo-box">
-    <img class="nav-logo"  id="LOGO" src="imagenes/LOGO JENIFER.png" alt="Logo">
-</div>
-
-    </a>
-                
-    <ul>
-        <li class="feat-link"><a href="/principal">INICIO</a></li>
-        <li class="feat-link"><a href="/servicios">SERVICIOS</a></li>
-        <div class="nav-separator"></div>
-        <li class="grey-link"><a href="/informacion">INFORMACION</a></li>
-        <li class="grey-link"><a href="/contacto">CONTACTENOS</a></li>
-    </ul>
-</nav>
-
-<nav class="dropdown-menu">
-    <ul>
-        <li class="feat-link-resp">
-            <a href="investigacion.html">
-                INICIO
-            </a>
-        </li>
-      
-        <li class="feat-link-resp">
-            <a href="educacion-ambiental.html">
-                SERVICIOS
-            </a>
-        </li>
-        <li class="grey-link-resp">
-            <a href="vision-errotuz">
-                CONOZCANOS
-            </a>
-        </li>
-        <li class="grey-link-resp">
-            <a href="contacto.html">
-                CONTACTENOS
-            </a>
-        </li>
-    </ul>
+    <div class="menu-toggle" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+                <img class="nav-logo" id="LOGO" src="/imagenes/LOGOJENIFEEER-removebg-preview.png" alt="Logo">
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+        <ul class="menu" id="menu">
+            <li><a href="/principal">Inicio</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/informacion">Nosotros</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </div>
 </nav>
 
 
-<div class="carousel-container">
-  <button class="carousel-prev">‹</button>
-  <div class="carousel-inner">
-    <div id="foto1"  class="carousel-slide slide4">
-  <div class="slide-content">
-    <div class="slide-text">
-      <!-- Aquí puedes poner tu texto o cualquier otro contenido -->
-      <h2 id="asesoriaa" >  <img  id="crecimiento" src="imagenes/contador.png" alt=""> Asesorías contables, tributarias Propiedad horizontal
-Revisoría fiscal</h2>
-      <p id="asesoriaa" >LOS BUENOS CONSEJOS GARANTIZAN BUENOS RESULTADOS.</p>
+
+
+
+
+
+
+
+    <nav class="nav-desktop">
+        <a href="index.html">
+            <div class="logo-box">
+                <img class="nav-logo" id="LOGO" src="imagenes/LOGO JENIFER.png" alt="Logo">
+            </div>
+        </a>
+        <ul>
+            <li class="feat-link"><a href="/principal">INICIO</a></li>
+            <li class="feat-link"><a href="/servicios">SERVICIOS</a></li>
+            <div class="nav-separator"></div>
+            <li class="grey-link"><a href="/informacion">INFORMACION</a></li>
+            <li class="grey-link"><a href="/contacto">CONTACTENOS</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Carrusel (visible solo en escritorio) -->
+<!-- Imagen estática (visible solo en dispositivos móviles) -->
+<div class="mobile-header">
+    <img src="/imagenes/doble-exposicion-diagrama-financiero-creativo-virtual-concepto-contabilidad-banca-fondo-edificios-of.jpg" alt="Imagen estática">
+    <div class="overlay">
+        <h2>CONTADOR BOGOTÁ, COLOMBIA</h2>
+        <p>JLC Auditors - Contadores en Bogotá</p>
     </div>
-    <img  id="primeraa" src="imagenes/fotofondo1.jpg" alt="Slide 4">
-  </div>
+</div>
+
+<!-- Carrusel (visible solo en escritorio) -->
+<div id="myCarousel" class="carousel-container">
+    <button class="carousel-prev">‹</button>
+    <div class="carousel-inner">
+        <div id="foto1" class="carousel-slide slide4">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h2 id="asesoriaa">Asesorías contables, tributarias Propiedad horizontal Revisoría fiscal</h2>
+                    <p id="asesoriaa">LOS BUENOS CONSEJOS GARANTIZAN BUENOS RESULTADOS.</p>
+                </div>
+                <img id="primeraa" src="imagenes/fotofondo1.jpg" alt="Slide 4">
+            </div>
+        </div>
+        <div class="carousel-slide slide1">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h2 id="rentaaaa">No olvides presentar tu declaración de renta como persona natural para el año gravable 2023. El calendario establecido para este proceso es del 12 de agosto al 24 de octubre.</h2>
+                    <p><img id="chulito" src="imagenes/marca-de-verificacion.png" alt="Chulito"> Patrimonio bruto que sea igual o superior a $190.854.000 año gravable 2023</p>
+                    <p><img id="chulito" src="imagenes/marca-de-verificacion.png" alt="Chulito"> Ingresos totales sean iguales o superiores a $59.377.000 año gravable 2023</p>
+                    <h2 id="comunicate"><img id="telefonoo" src="imagenes/llamada.png" alt="Teléfono"> Comunícate para más información</h2>
+                </div>
+                <img id="renta1" src="imagenes/mifoto.png" alt="Slide 1">
+            </div>
+        </div>
+        <div class="carousel-slide slide2">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h2 id="asesoriaa">Elaboración de Estados Financieros</h2>
+                    <h2 id="asesoriaa">auditoria revisoria fiscal</h2>
+                    <h2 id="comunicate">Comunícate para más información</h2>
+                </div>
+                <img id="renta1" src="imagenes/E-finanzas-financiero-proceso-calcul-cuentas-informe.jpg" alt="Slide 1">
+            </div>
+        </div>
+        <div class="carousel-slide slide3">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h2 id="asesoriaa">Medios Magnéticos Nacionales y Distritales</h2>
+                    <p id="asesoriaa">Presentación de informes de medios magnéticos a nivel nacional y distrital.</p>
+                    <h2 id="comunicate">Comunícate para más información</h2>
+                </div>
+                <img id="renta1" src="imagenes/excel.png" alt="Slide 1">
+            </div>
+        </div>
+        <!-- Agrega más slides según sea necesario -->
+    </div>
+    <button class="carousel-next">›</button>
 </div>
 
 
 
-<div class="carousel-slide slide1">
-  <div class="slide-content">
-    <div  class="slide-text">
-      <h2 id="rentaaaa" >No olvides presentar tu declaración de renta como persona natural para el año gravable 2023. El calendario establecido para este proceso es del 12 de agosto al 24 de octubre.</h2>
-      <!-- Requisitos con el ícono -->
-      <p><img  id="chulito" src="imagenes/marca-de-verificacion.png" alt="Chulito"> Patrimonio bruto que sea igual o superior a $190.854.000 año gravable 2023</p>
-      <p><img id="chulito" src="imagenes/marca-de-verificacion.png" alt="Chulito"> Ingresos totales sean iguales o superiores a $59.377.000 año gravable 2023</p>
-
-
-
-      <!-- Comunicación -->
-      <h2 id="comunicate"><img id="telefonoo" src="imagenes/llamada.png" alt="Teléfono"> Comunícate para más información</h2>
-    </div>
-    <!-- Imagen principal del slide -->
-    <img id="renta1" src="imagenes/mifoto.png" alt="Slide 1">
-  </div>
-</div>
-
-
-
-
-
-
-
-    <div class="carousel-slide slide2">
-    <div class="slide-content">
-    <div class="slide-text">
-            
-            <h2 id="asesoriaa" >  <img  id="crecimiento" src="imagenes/estado-financiero.png" alt=""> Elaboración de Estados Financieros</h2>
-            <h2 id="asesoriaa" >  <img  id="crecimiento" src="imagenes/buscar.png" alt="">auditoria revisoria fiscal</h2>
-
-
-      <!-- Requisitos con el ícono -->
-      
-      <!-- Comunicación -->
-      <h2 id="comunicate"><img id="telefonoo" src="imagenes/llamada.png" alt="Teléfono"> Comunícate para más información</h2>
-    </div>
-    <!-- Imagen principal del slide -->
-    <img id="renta1" src="imagenes/E-finanzas-financiero-proceso-calcul-cuentas-informe.jpg" alt="Slide 1">
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-    <div class="carousel-slide slide3">
-        <div class="slide-content">
-    <div class="slide-text">
-            
-            <h2 id="asesoriaa" >  <img  id="crecimiento" src="/imagenes/teneduria-de-libros.png" alt=""> Medios Magnéticos Nacionales y Distritales</h2>
-      <p id="asesoriaa" >Presentación de informes de medios magnéticos a nivel nacional y distrital.</p>
-
-      <!-- Requisitos con el ícono -->
-      
-      <!-- Comunicación -->
-      <h2 id="comunicate"><img id="telefonoo" src="imagenes/llamada.png" alt="Teléfono"> Comunícate para más información</h2>
-    </div>
-    <!-- Imagen principal del slide -->
-    <img id="renta1" src="imagenes/excel.png" alt="Slide 1">
-  </div>
-</div>
-
-
-
-
-
-
-    <!-- Agrega más slides según sea necesario -->
-  </div>
-  <div class="carousel-indicators">
-    <div class="indicator"></div>
-    <div class="indicator"></div>
-    <div class="indicator"></div>
-    <div class="indicator"></div>
-    <!-- Añade más indicadores según el número de slides -->
-  </div>
-  <button class="carousel-next">›</button>
-</div>
 
 
 
@@ -1829,43 +171,16 @@ Revisoría fiscal</h2>
 
 
 
-
-
-<article class="container--redes">
-  <!--incio de el primer icono-->
-    <div class="icon">
-      <a class="icon-primary" href="https://www.facebook.com/profile.php?id=61562022058872&mibextid=LQQJ4d">f</a>	
-
-      <div class="container-description">
-        <a class="icon-description" href="#">OBTENER INFORMACION</a>	
-      </div>
+        <div class="carousel-indicators">
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <!-- Añade más indicadores según el número de slides -->
+        </div>
+        <button class="carousel-next">›</button>
     </div>
 
-  <!--incio segundo icono-->
-<div class="icon">
-    <a class="icon-primary color-gmail" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20m%C3%A1s%20informaci%C3%B3n">
-        W
-    </a>	
-    <div class="container-description">
-        <a class="icon-description color-gmail-text" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20m%C3%A1s%20informaci%C3%B3n">
-            OBTENER INFORMACIÓN
-        </a>	
-    </div>
-</div>
-
-
-<div class="icon">
-    <a class="icon-primary color-whatsapp" href="https://wa.me/573219724076?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
-        W
-    </a>	
-    <div class="container-description">
-        <a class="icon-description color-whatsapp-text" href="https://wa.me/573219724076?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
-            OBTENER INFORMACIÓN
-        </a>	
-    </div>
-</div>
-
-</article>
 
 
 
@@ -1874,12 +189,26 @@ Revisoría fiscal</h2>
 
 
 
-
-
-
-
-
-
+    <article class="container--redes">
+        <div class="icon">
+            <a class="icon-primary" href="https://www.facebook.com/profile.php?id=61562022058872&mibextid=LQQJ4d">f</a>
+            <div class="container-description">
+                <a class="icon-description" href="#">OBTENER INFORMACION</a>
+            </div>
+        </div>
+        <div class="icon">
+            <a class="icon-primary color-gmail" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20más%20información">W</a>
+            <div class="container-description">
+                <a class="icon-description color-gmail-text" href="mailto:Normas.gestion@gmail.com?subject=Necesito%20más%20información">OBTENER INFORMACIÓN</a>
+            </div>
+        </div>
+        <div class="icon">
+            <a class="icon-primary color-whatsapp" href="https://wa.me/573219724076?text=Necesito%20más%20información" target="_blank">W</a>
+            <div class="container-description">
+                <a class="icon-description color-whatsapp-text" href="https://wa.me/573219724076?text=Necesito%20más%20información" target="_blank">OBTENER INFORMACIÓN</a>
+            </div>
+        </div>
+    </article>
 
 
 
@@ -1889,121 +218,115 @@ Revisoría fiscal</h2>
 
 <section class="featured">
     <div class="title-container">
-         <h4>SERVICIOS PRINCIPALES</h4>
+        <h4>SERVICIOS PRINCIPALES</h4>
     </div>
-     
     <div class="card-container">
-          <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Elaboración%20de%20Estados%20Financieros" target="_blank">
+        <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Elaboración%20de%20Estados%20Financieros" target="_blank">
             <div class="card card-inv">
                 <div class="card-summary">
-                    <h4>ESTADOS FINACIEROS</h4>
-                <p>Proceso integral para la elaboración y presentación de los estados financieros, proporcionando una visión clara y precisa de la situación económica y financiera de la empresa.</p>
+                    <h4>ESTADOS FINANCIEROS</h4>
+                    <p>Proceso integral para la elaboración y presentación de los estados financieros, proporcionando una visión clara y precisa de la situación económica y financiera de la empresa.</p>
                 </div>
             </div>
-        </a> 
-
-          <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Registro%20y%20Actualización%20del%20RUT" target="_blank">
+        </a>
+        <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Registro%20y%20Actualización%20del%20RUT" target="_blank">
             <div class="card card-edu">
                 <div class="card-summary">
-                <h4>REGISTRO Y ACTUALIZACIÓN DEL RUT,RUB  Y CAMARA DE COMERCIO</h4>
-                <p>Servicio dedicado al registro y actualización de rut, rub y camara de comercio asegurando el cumplimiento de las normativas y manteniendo la información empresarial al día para facilitar trámites fiscales y comerciales.</p>
+                    <h4>REGISTRO Y ACTUALIZACIÓN DEL RUT,RUB Y CAMARA DE COMERCIO</h4>
+                    <p>Servicio dedicado al registro y actualización de rut, rub y camara de comercio asegurando el cumplimiento de las normativas y manteniendo la información empresarial al día para facilitar trámites fiscales y comerciales.</p>
                 </div>
             </div>
         </a>
-
- 
-
-          <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Facturación%20Electrónica" target="_blank">
+        <a href="https://wa.me/573223958005?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Facturación%20Electrónica" target="_blank">
             <div class="card card-ases">
                 <div class="card-summary">
-                <h4>FACTURACIÓN ELECTRÓNICA</h4>
-            <p>Implementación y gestión de sistemas de facturación electrónica conforme a las normativas vigentes. Optimiza tu proceso de facturación y asegura la precisión y legalidad de tus documentos electrónicos.</p>
+                    <h4>FACTURACIÓN ELECTRÓNICA</h4>
+                    <p>Implementación y gestión de sistemas de facturación electrónica conforme a las normativas vigentes. Optimiza tu proceso de facturación y asegura la precisión y legalidad de tus documentos electrónicos.</p>
                 </div>
             </div>
         </a>
-    </div>    
-
-    
-</section>
-
-<div class="services-section">
-  <h2>SERVICIOS TRIBUTARIOS Y EN IMPUESTOS</h2>
-  <div class="services-grid">
-    <div class="service-item">
-      <div class="service-card">
-        <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-outsourcing-contable.jpg');">
-          <i class="fas fa-chart-line"></i>
-          <p class="white-text">Consultoría y Asesoría Tributaria</p>
-        </div>
-        <div class="back">
-          <p>A través de nuestro servicio de consultoría y asesoramiento tributario satisfacemos las necesidades de nuestros clientes en materia de: todo lo relacionado con impuestos (Renta, Retención en la Fuente, IVA, Timbre, GMF, Riqueza, Predial, Vehículos, Industria y Comercio, etc); atención de defensas ante la vía gubernativa contra las administraciones de impuestos; cálculo de provisión de impuestos; cierre fiscal; estados financieros; revisión declaración de impuesto sobre la renta; entre otros.</p>
-        </div>
-      </div>
-    </div>
-    <div class="service-item">
-      <div class="service-card">
-        <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-que-es-un-asesor-fiscal.png');">
-          <i class="fas fa-shield-alt"></i>
-          <p class="white-text">Aseguramiento Tributario</p>
-        </div>
-        <div class="back">
-          <p>Nuestro equipo se compromete a realizar una revisión integral del debido cumplimiento de las obligaciones tributarias de su empresa. Atendemos la totalidad de consultas en materia de impuestos; atención de comités tributarios; alternativas de planeación fiscal; cálculo de la provisión de impuestos; revisión por parte de auditor tributario de las declaraciones tributarias; revisión previa de respuestas a requerimientos de administraciones de impuestos; respuestas a emplazamientos, pliego de cargos, requerimientos especiales y recursos de reconsideración.</p>
-        </div>
-      </div>
-    </div>
-    <div class="service-item">
-      <div class="service-card">
-        <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-el-valor-probatorio-en-el-litigio-tributario-1920-1080.png');">
-          <i class="fas fa-balance-scale"></i>
-          <p class="white-text">Litigios Tributarios</p>
-        </div>
-        <div class="back">
-          <p>Atención de defensas ante la vía gubernativa contra las administraciones de impuestos con respecto a los siguientes impuestos: Renta (incluyendo Retención en la Fuente), IVA, Timbre, GMF, Riqueza, Industria y Comercio, Predial y vehículos (respuestas a emplazamientos, pliego de cargos, requerimientos especiales y recursos de reconsideración). Apoderamiento para la presentación de acciones judiciales en la jurisdicción contenciosa administrativa contra actos que profieran las administraciones de impuestos.</p>
-        </div>
-      </div>
-    </div>
-    <div class="service-item">
-      <div class="service-card">
-        <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-JM1.jpg');">
-          <i class="fas fa-star"></i>
-          <p class="white-text">Servicios Especiales</p>
-        </div>
-        <div class="back">
-          <p>Solicitud de saldos a favor. Atención de visitas de las administraciones de impuestos. Elaboración o revisión de Declaraciones de Renta. Asesoría en cierres Fiscales. Planeación Fiscal / Planeación Tributaria. Auditorías Tributarias. Outsourcing tributario. Consultoría contable con implicaciones tributarias. Planeación tributaria en la compra y venta de empresas y activos.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<section id="clientes" class="clients">
-    <div class="container">
-        <h2>Nuestros Clientes</h2>
-        <div class="client-grid">
-            <div class="client-item">
-                <img src="imagenes/cliente1.png" alt="Cliente 1">
-            </div>
-         
-            <div class="client-item">
-                <img src="imagenes/cliente2.jpg" alt="Cliente 2">
-            </div>
-            <div class="client-item">
-                <img src="imagenes/cliente3.jpg" alt="Cliente 3">
-            </div>
-            <!-- Agrega más clientes aquí -->
-        </div>
     </div>
 </section>
 
 
 
-   <footer class="footer">
+
+
+
+
+
+
+
+    <div class="services-section">
+        <h2>SERVICIOS TRIBUTARIOS Y EN IMPUESTOS</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-card">
+                    <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-outsourcing-contable.jpg');">
+                        <i class="fas fa-chart-line"></i>
+                        <p class="white-text">Consultoría y Asesoría Tributaria</p>
+                    </div>
+                    <div class="back">
+                        <p>A través de nuestro servicio de consultoría y asesoramiento tributario satisfacemos las necesidades de nuestros clientes en materia de: todo lo relacionado con impuestos (Renta, Retención en la Fuente, IVA, Timbre, GMF, Riqueza, Predial, Vehículos, Industria y Comercio, etc); atención de defensas ante la vía gubernativa contra las administraciones de impuestos; cálculo de provisión de impuestos; cierre fiscal; estados financieros; revisión declaración de impuesto sobre la renta; entre otros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-card">
+                    <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-que-es-un-asesor-fiscal.png');">
+                        <i class="fas fa-shield-alt"></i>
+                        <p class="white-text">Aseguramiento Tributario</p>
+                    </div>
+                    <div class="back">
+                        <p>Nuestro equipo se compromete a realizar una revisión integral del debido cumplimiento de las obligaciones tributarias de su empresa. Atendemos la totalidad de consultas en materia de impuestos; atención de comités tributarios; alternativas de planeación fiscal; cálculo de la provisión de impuestos; revisión por parte de auditor tributario de las declaraciones tributarias; revisión previa de respuestas a requerimientos de administraciones de impuestos; respuestas a emplazamientos, pliego de cargos, requerimientos especiales y recursos de reconsideración.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-card">
+                    <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-el-valor-probatorio-en-el-litigio-tributario-1920-1080.png');">
+                        <i class="fas fa-balance-scale"></i>
+                        <p class="white-text">Litigios Tributarios</p>
+                    </div>
+                    <div class="back">
+                        <p>Atención de defensas ante la vía gubernativa contra las administraciones de impuestos con respecto a los siguientes impuestos: Renta (incluyendo Retención en la Fuente), IVA, Timbre, GMF, Riqueza, Industria y Comercio, Predial y vehículos (respuestas a emplazamientos, pliego de cargos, requerimientos especiales y recursos de reconsideración). Apoderamiento para la presentación de acciones judiciales en la jurisdicción contenciosa administrativa contra actos que profieran las administraciones de impuestos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-card">
+                    <div class="front" style="background-image: url('imagenes/luxa.org-opacity-changed-JM1.jpg');">
+                        <i class="fas fa-star"></i>
+                        <p class="white-text">Servicios Especiales</p>
+                    </div>
+                    <div class="back">
+                        <p>Solicitud de saldos a favor. Atención de visitas de las administraciones de impuestos. Elaboración o revisión de Declaraciones de Renta. Asesoría en cierres Fiscales. Planeación Fiscal / Planeación Tributaria. Auditorías Tributarias. Outsourcing tributario. Consultoría contable con implicaciones tributarias. Planeación tributaria en la compra y venta de empresas y activos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="clientes" class="clients">
+        <div class="container">
+            <h2>Nuestros Clientes</h2>
+            <div class="client-grid">
+                <div class="client-item">
+                    <img src="imagenes/cliente1.png" alt="Cliente 1">
+                </div>
+                <div class="client-item">
+                    <img src="imagenes/cliente2.jpg" alt="Cliente 2">
+                </div>
+                <div class="client-item">
+                    <img src="imagenes/cliente3.jpg" alt="Cliente 3">
+                </div>
+                <!-- Agrega más clientes aquí -->
+            </div>
+        </div>
+    </section>
+
+<div class="foooter">
+    <footer id="footer" class="footer">
         <div class="footer-container">
             <div class="footer-column">
                 <h4>Contacto</h4>
@@ -2022,150 +345,105 @@ Revisoría fiscal</h2>
             </div>
             <div class="footer-column">
                 <h4>Síguenos</h4>
-                <div class="social-media">
-                </div>
+                <div class="social-media"></div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Asesor Contable. Todos los derechos reservados.</p>
         </div>
     </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/scripts.js" defer></script>
-
-</body>
-<script src="errotuz.js">   
-</script>
-<Script>
-    const hamburgerMenu = document.querySelector('.hamburger');
-const dropdownMenu = document.querySelector('.dropdown-menu');
-
-hamburgerMenu.addEventListener('mousedown', function(){
-    dropdownMenu.classList.toggle('visible');
-})
-</Script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
+   <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const slides = document.querySelectorAll('.carousel-slide');
-  const prevBtn = document.querySelector('.carousel-prev');
-  const nextBtn = document.querySelector('.carousel-next');
-  const carouselInner = document.querySelector('.carousel-inner');
-  
-  let currentIndex = 0;
-  const totalSlides = slides.length;
-  
-  // Mostrar el primer slide al cargar
-  slides[currentIndex].classList.add('active');
-  
-  function showSlide(index) {
-    carouselInner.style.transform = `translateX(-${index * 100}%)`; // Mover el carrusel horizontalmente
-    slides.forEach((slide, i) => {
-      if (i === index) {
-        slide.classList.add('active');
-      } else {
-        slide.classList.remove('active');
-      }
+    // Menú hamburguesa y menú desplegable
+    const hamburgerMenu = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu');
+    const overlay = document.getElementById('overlay');
+
+    hamburgerMenu.addEventListener('click', function() {
+        menu.classList.toggle('show');
+        overlay.classList.toggle('show');
     });
-  }
-  
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    showSlide(currentIndex);
-  }
-  
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    showSlide(currentIndex);
-  }
-  
-  // Evento para el botón de siguiente slide
-  nextBtn.addEventListener('click', function() {
-    nextSlide();
-  });
-  
-  // Evento para el botón de slide anterior
-  prevBtn.addEventListener('click', function() {
-    prevSlide();
-  });
-  
-  // Automáticamente cambiar de slide cada 5 segundos
-  setInterval(nextSlide, 5000); // Cambia cada 5 segundos (5000 milisegundos)
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-  const indicators = document.querySelectorAll('.indicator');
-  const slides = document.querySelectorAll('.carousel-slide');
-
-  // Función para actualizar los indicadores según el slide actual
-  function updateIndicators(currentSlide) {
-    indicators.forEach((indicator, index) => {
-      if (index === currentSlide) {
-        indicator.classList.add('active');
-      } else {
-        indicator.classList.remove('active');
-      }
+    overlay.addEventListener('click', function() {
+        menu.classList.remove('show');
+        overlay.classList.remove('show');
     });
-  }
 
-  // Función para manejar la navegación del carrusel
-  function navigateCarousel(direction) {
-    const currentSlide = getCurrentSlideIndex();
-    let nextSlide;
+    // Funcionalidad del carrusel
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    const carouselInner = document.querySelector('.carousel-inner');
+    const indicators = document.querySelectorAll('.indicator');
+    let currentIndex = 0;
+    const totalSlides = slides.length;
 
-    if (direction === 'next') {
-      nextSlide = (currentSlide + 1) % slides.length;
-    } else if (direction === 'prev') {
-      nextSlide = (currentSlide - 1 + slides.length) % slides.length;
+    function showSlide(index) {
+        carouselInner.style.transform = `translateX(-${index * 100}%)`;
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+        updateIndicators(index);
     }
 
-    updateCarousel(nextSlide);
-  }
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }
 
-  // Función para obtener el índice del slide actual
-  function getCurrentSlideIndex() {
-    let currentSlideIndex = 0;
-    slides.forEach((slide, index) => {
-      if (slide.classList.contains('active-slide')) {
-        currentSlideIndex = index;
-      }
-    });
-    return currentSlideIndex;
-  }
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentIndex);
+    }
 
-  // Event listeners para los botones de navegación
-  document.querySelector('.carousel-prev').addEventListener('click', () => {
-    navigateCarousel('prev');
-  });
+    function updateIndicators(currentSlide) {
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+        });
+    }
 
-  document.querySelector('.carousel-next').addEventListener('click', () => {
-    navigateCarousel('next');
-  });
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    setInterval(nextSlide, 5000);
 
-  // Event listeners para los indicadores
-  indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-      updateCarousel(index);
-    });
-  });
-
-  // Función para actualizar el carrusel
-  function updateCarousel(index) {
-    slides.forEach((slide, slideIndex) => {
-      if (slideIndex === index) {
-        slide.classList.add('active-slide');
-      } else {
-        slide.classList.remove('active-slide');
-      }
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            showSlide(index);
+            currentIndex = index;
+        });
     });
 
-    updateIndicators(index);
-  }
+    showSlide(currentIndex);
 });
 
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    const overlay = document.getElementById('overlay');
 
+    hamburger.addEventListener('click', function() {
+        menu.classList.toggle('open');
+        overlay.classList.toggle('show');
+    });
 
+    overlay.addEventListener('click', function() {
+        menu.classList.remove('open');
+        overlay.classList.remove('show');
+    });
+});
+</script>
 
+</body>
 </html>
+
+
+
+
+
+
+
+
