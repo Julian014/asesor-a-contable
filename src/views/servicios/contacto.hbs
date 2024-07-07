@@ -681,7 +681,8 @@ height: 70%;
     font-size: 20px;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-}
+}    
+
 
 .nav-responsive a:hover {
     color: #ffcc00;
@@ -979,8 +980,70 @@ font-size: 100px;
 
 
 
+.menu a {
+    position: relative;
+    text-decoration: none;
+    color: #FEFFFF;
+    margin: 0 10px;
+    line-height: 70px;
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    transition: all 250ms ease;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEFFFF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 
+.menu li {
+    border-bottom: 1px solid #FEFFFF; /* Línea blanca */
+    width: 100%;
+}
+.menu a {
+    position: relative;
+    text-decoration: none;
+    color: #FEFFFF;
+    margin: 0 10px;
+    line-height: 70px;
+    letter-spacing: .9px;
+    
+    text-transform: uppercase;
+    transition: all 250ms ease;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+
+    background-color: #FEFFFF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 </Style>
 <body>
